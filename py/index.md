@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Seattle Computing Resourcing"
+  name: "SCR"
   text: "Learning"
-  tagline: My great project tagline
+  tagline: hi
   actions:
     - theme: brand
       text: Start learning!
