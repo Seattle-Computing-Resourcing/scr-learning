@@ -3,23 +3,26 @@
 layout: home
 
 hero:
-  name: "SCR"
-  text: "Learning"
-  tagline: hi
+  name: "Seattle Computing Resourcing"
+  text: "Learning & Exercises"
+  tagline: 
   actions:
     - theme: brand
-      text: Start learning!
-      link: /markdown-examples
+      text: Start Learning
+      link: /py/learning/api-examples
+    - theme: brand
+      text: Solve Exercises
+      link: /py/exercises/markdown-examples
     - theme: alt
       text: Main Site
       link: https://seattlecr.vercel.app
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Support for 3 Languages
+    details: Resources in C++, Python, and Java! C++ is the default, but you can switch anytime in the language selector.
+  - title: Exercises that Complement Learning
+    details: Exercises are provided, each with their own solution.
+  - title: Many Applications
+    details: C++, Python, and Java can be used in USACO, Leetcode, AP CS, etc.
 ---
 

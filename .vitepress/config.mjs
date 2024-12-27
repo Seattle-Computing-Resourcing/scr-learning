@@ -9,19 +9,29 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Learning', link: '/markdown-examples' }
+          { text: 'Learning', link: '/learning/api-examples' },
+          { text: 'Exercises', link: '/exercises/markdown-examples' }
         ],
-        sidebar: [
-          {
-            text: 'Learning',
-            collapsed: false,
-            items: [
-              { text: 'Index', link: '/' },
-              { text: 'Markdown examples', link: '/markdown-examples' },
-              { text: 'API examples', link: '/api-examples' },
-            ]
-          },
-        ]
+        sidebar: {
+          '/learning/': [
+            {
+              text: 'Learning',
+              collapsed: false,
+              items: [
+                { text: 'API examples', link: '/learning/api-examples' },
+              ]
+            },
+          ],
+          '/exercises/': [
+            {
+              text: 'Exercises',
+              collapsed: false,
+              items: [
+                { text: 'Markdown examples', link: '/exercises/markdown-examples' },
+              ]
+            },
+          ],
+        }
       }
     },
     py: {
@@ -30,20 +40,30 @@ export default defineConfig({
       link: '/py',
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/py' },
-          { text: 'Examples', link: '/py/markdown-examples' }
+          { text: 'Home', link: '/py/' },
+          { text: 'Learning', link: '/py/learning/api-examples' },
+          { text: 'Exercises', link: '/py/exercises/markdown-examples' }
         ],
-        sidebar: [
-          {
-            text: 'Learning',
-            collapsed: false,
-            items: [
-              { text: 'Index', link: '/py' },
-              { text: 'Markdown examples', link: '/py/markdown-examples' },
-              { text: 'API examples', link: '/py/api-examples' },
-            ]
-          },
-        ]
+        sidebar: {
+          '/py/learning/': [
+            {
+              text: 'Learning',
+              collapsed: false,
+              items: [
+                { text: 'API examples', link: '/py/learning/api-examples' },
+              ]
+            },
+          ],
+          '/py/exercises/': [
+            {
+              text: 'Exercises',
+              collapsed: false,
+              items: [
+                { text: 'Markdown examples', link: '/py/exercises/markdown-examples' },
+              ]
+            },
+          ],
+        }
       }
     },
     java: {
@@ -52,20 +72,30 @@ export default defineConfig({
       link: '/java',
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/java' },
-          { text: 'Examples', link: '/java/markdown-examples' }
+          { text: 'Home', link: '/java/' },
+          { text: 'Learning', link: '/java/learning/api-examples' },
+          { text: 'Exercises', link: '/java/exercises/markdown-examples' }
         ],
-        sidebar: [
-          {
-            text: 'Learning',
-            collapsed: false,
-            items: [
-              { text: 'Index', link: '/java' },
-              { text: 'Markdown examples', link: '/java/markdown-examples' },
-              { text: 'API examples', link: '/java/api-examples' },
-            ]
-          },
-        ]
+        sidebar: {
+          '/java/learning/': [
+            {
+              text: 'Learning',
+              collapsed: false,
+              items: [
+                { text: 'API examples', link: '/java/learning/api-examples' },
+              ]
+            },
+          ],
+          '/java/exercises/': [
+            {
+              text: 'Exercises',
+              collapsed: false,
+              items: [
+                { text: 'Markdown examples', link: '/java/exercises/markdown-examples' },
+              ]
+            },
+          ],
+        }
       }
     },
   },
