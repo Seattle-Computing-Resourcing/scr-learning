@@ -9,16 +9,89 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Learning', link: '/learning/api-examples' },
-          { text: 'Exercises', link: '/exercises/markdown-examples' }
+          { text: 'Learning', link: '/learning/introtocs' },
+          { text: 'Exercises', link: '/exercises/markdown-examples' },
+          { text: 'Answers', link: '/answers/helloworld' }
         ],
         sidebar: {
           '/learning/': [
             {
-              text: 'Learning',
+              text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/learning/api-examples' },
+                { text: 'Intro to CS', link: '/learning/introtocs' },
+              ]
+            },
+            {
+              text: 'Headers, Macros, and Namespaces',
+              collapsed: false,
+              items: [
+                { text: 'Headers', link: '/learning/headers' },
+              ]
+            },
+            {
+              text: 'Operations and Conditions',
+              collapsed: false,
+              items: [
+                { text: 'Operations and Conditions', link: '/learning/operationsandconditions'},
+              ]
+            },
+            {
+              text: 'Object Oriented Programming',
+              collapsed: false,
+              items: [
+                { text: 'OOP', link: '/learning/oop' },
+              ]
+            },
+            {
+              text: 'Arrays, Vectors, and Strings',
+              collapsed: false,
+              items: [
+                { text: 'Arrays', link: '/learning/arrays' },
+                { text: 'Arrays', link: '/learning/vectors' },
+                { text: 'Arrays', link: '/learning/strings' },
+              ]
+            },
+            {
+              text: 'Loops',
+              collapsed: false,
+              items: [
+                { text: 'Loops', link: '/learning/loops' },
+              ]
+            },
+            {
+              text: 'Sorting',
+              collapsed: false,
+              items: [
+                { text: 'Sorting', link: '/learning/sorting' },
+              ]
+            },
+            {
+              text: 'Maps and Sets',
+              collapsed: false,
+              items: [
+                { text: 'Maps and Sets', link: '/learning/mapsandsets' },
+              ]
+            },
+            {
+              text: 'Intermediate D.S.',
+              collapsed: false,
+              items: [
+                { text: 'Intermediate D.S.', link: '/learning/intermediateds' },
+              ]
+            },
+            {
+              text: 'Pointers',
+              collapsed: false,
+              items: [
+                { text: 'API examples', link: '/learning/pointers' },
+              ]
+            },
+            {
+              text: 'Graphs',
+              collapsed: false,
+              items: [
+                { text: 'API examples', link: '/learning/graphs' },
               ]
             },
           ],
@@ -28,6 +101,15 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Markdown examples', link: '/exercises/markdown-examples' },
+              ]
+            },
+          ],
+          '/answers/': [
+            {
+              text: 'Answers',
+              collapsed: false,
+              items: [
+                { text: 'Test', link: '/answers/helloworld' },
               ]
             },
           ],
@@ -42,7 +124,8 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/py/' },
           { text: 'Learning', link: '/py/learning/api-examples' },
-          { text: 'Exercises', link: '/py/exercises/markdown-examples' }
+          { text: 'Exercises', link: '/py/exercises/markdown-examples' },
+          { text: 'Answers', link: '/py/answers/helloworld' }
         ],
         sidebar: {
           '/py/learning/': [
@@ -63,6 +146,15 @@ export default defineConfig({
               ]
             },
           ],
+          '/py/answers/': [
+            {
+              text: 'Answers',
+              collapsed: false,
+              items: [
+                { text: 'Test', link: '/py/answers/helloworld' },
+              ]
+            },
+          ],
         }
       }
     },
@@ -74,7 +166,8 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/java/' },
           { text: 'Learning', link: '/java/learning/api-examples' },
-          { text: 'Exercises', link: '/java/exercises/markdown-examples' }
+          { text: 'Exercises', link: '/java/exercises/markdown-examples' },
+          { text: 'Answers', link: '/java/answers/helloworld' }
         ],
         sidebar: {
           '/java/learning/': [
@@ -92,6 +185,15 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Markdown examples', link: '/java/exercises/markdown-examples' },
+              ]
+            },
+          ],
+          '/java/answers/': [
+            {
+              text: 'Answers',
+              collapsed: false,
+              items: [
+                { text: 'Test', link: '/java/answers/helloworld' },
               ]
             },
           ],
