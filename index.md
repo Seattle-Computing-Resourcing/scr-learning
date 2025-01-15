@@ -25,4 +25,3 @@ features:
   - title: Many Applications
     details: C++, Python, and Java can be used in USACO, Leetcode, AP CS, etc.
 ---
-

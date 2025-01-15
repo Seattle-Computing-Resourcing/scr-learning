@@ -1,7 +1,13 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3);
+    },
+  },
   locales: {
     root: {
       label: 'C++',
