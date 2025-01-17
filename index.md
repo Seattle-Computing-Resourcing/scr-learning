@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Start Learning
-      link: /learning/api-examples
+      link: /learning/introtocs
     - theme: brand
       text: Solve Exercises
       link: /exercises/markdown-examples
