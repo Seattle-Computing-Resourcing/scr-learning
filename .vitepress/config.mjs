@@ -15,9 +15,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Learning', link: '/learning/introtocs' },
+          { text: 'Learning', link: '/learning/gettingstarted' },
           { text: 'Exercises', link: '/exercises/markdown-examples' },
-          { text: 'Answers', link: '/answers/helloworld' }
         ],
         sidebar: {
           '/learning/': [
@@ -25,21 +24,13 @@ export default defineConfig({
               text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'Intro to CS', link: '/learning/introtocs' },
-              ]
-            },
-            {
-              text: 'Headers, Macros, and Namespaces',
-              collapsed: false,
-              items: [
+                { text: 'Getting Started', link: '/learning/gettingstarted' },
                 { text: 'Headers', link: '/learning/headers' },
-              ]
-            },
-            {
-              text: 'Operations and Conditions',
-              collapsed: false,
-              items: [
-                { text: 'Operations and Conditions', link: '/learning/operationsandconditions'},
+                { text: 'Namespaces', link: '/learning/namespaces' },
+                { text: 'Primitive Datatypes', link: '/learning/primitivedt' },
+                { text: 'Input and Output', link: '/learning/inputoutput' },
+                { text: 'Arithmetic Operations', link: '/learning/arithmeticoperations' },
+                { text: 'Conditions', link: '/learning/conditions' },
               ]
             },
             {
@@ -54,8 +45,8 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Arrays', link: '/learning/arrays' },
-                { text: 'Arrays', link: '/learning/vectors' },
-                { text: 'Arrays', link: '/learning/strings' },
+                { text: 'Vectors', link: '/learning/vectors' },
+                { text: 'Strings', link: '/learning/strings' },
               ]
             },
             {
@@ -110,15 +101,6 @@ export default defineConfig({
               ]
             },
           ],
-          '/answers/': [
-            {
-              text: 'Answers',
-              collapsed: false,
-              items: [
-                { text: 'Test', link: '/answers/helloworld' },
-              ]
-            },
-          ],
         }
       }
     },
@@ -131,7 +113,6 @@ export default defineConfig({
           { text: 'Home', link: '/py/' },
           { text: 'Learning', link: '/py/learning/api-examples' },
           { text: 'Exercises', link: '/py/exercises/markdown-examples' },
-          { text: 'Answers', link: '/py/answers/helloworld' }
         ],
         sidebar: {
           '/py/learning/': [
@@ -152,15 +133,6 @@ export default defineConfig({
               ]
             },
           ],
-          '/py/answers/': [
-            {
-              text: 'Answers',
-              collapsed: false,
-              items: [
-                { text: 'Test', link: '/py/answers/helloworld' },
-              ]
-            },
-          ],
         }
       }
     },
@@ -173,7 +145,6 @@ export default defineConfig({
           { text: 'Home', link: '/java/' },
           { text: 'Learning', link: '/java/learning/api-examples' },
           { text: 'Exercises', link: '/java/exercises/markdown-examples' },
-          { text: 'Answers', link: '/java/answers/helloworld' }
         ],
         sidebar: {
           '/java/learning/': [
@@ -191,15 +162,6 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Markdown examples', link: '/java/exercises/markdown-examples' },
-              ]
-            },
-          ],
-          '/java/answers/': [
-            {
-              text: 'Answers',
-              collapsed: false,
-              items: [
-                { text: 'Test', link: '/java/answers/helloworld' },
               ]
             },
           ],
