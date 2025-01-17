@@ -26,7 +26,6 @@ export default defineConfig({
               items: [
                 { text: 'Getting Started', link: '/learning/gettingstarted' },
                 { text: 'Headers', link: '/learning/headers' },
-                { text: 'Namespaces', link: '/learning/namespaces' },
                 { text: 'Primitive Datatypes', link: '/learning/primitivedt' },
                 { text: 'Input and Output', link: '/learning/inputoutput' },
                 { text: 'Arithmetic Operations', link: '/learning/arithmeticoperations' },
