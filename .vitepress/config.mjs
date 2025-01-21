@@ -3,6 +3,7 @@ import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [["script", { src: "/_vercel/insights/script.js", defer: true }]],
   markdown: {
     config: (md) => {
       md.use(mathjax3);
