@@ -1,24 +1,16 @@
 import { defineConfig, loadEnv } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
+import googleAnalytics from 'vitepress-plugin-google-analytics'
 
 const env = loadEnv('', process.cwd())
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [
-    [
-      'script',
-      {
-        async: true,
-        src: `https://www.googletagmanager.com/gtag/js?id=G-${env.VITE_GOOGLE_TAG}$`,
-      },
-    ],
-    [
-      'script',
-      {},
-      `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-${env.VITE_GOOGLE_TAG}$');`,
-    ],
-  ],
+  enhanceApp: (ctx) => {
+    googleAnalytics({
+      id: `G-${env.VITE_GOOGLE_TAG}`,
+    })
+  },
   markdown: {
     config: (md) => {
       md.use(mathjax3);
