@@ -1,7 +1,10 @@
 import { defineConfig, loadEnv } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
+import dotenv from 'dotenv'
 
-const env = loadEnv('', process.cwd())
+dotenv.config()
+
+console.log(process.env.VITE_GOOGLE_TAG);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,13 +13,13 @@ export default defineConfig({
       'script',
       {
         async: '',
-        src: `https://www.googletagmanager.com/gtag/js?id=G-${env.VITE_GOOGLE_TAG}$`,
+        src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$`,
       },
     ],
     [
       'script',
       {},
-      `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-${env.VITE_GOOGLE_TAG}$');`,
+      `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-${process.env.VITE_GOOGLE_TAG}$');`,
     ],
   ],
   markdown: {
