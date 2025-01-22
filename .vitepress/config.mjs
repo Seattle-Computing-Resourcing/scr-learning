@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-console.log(process.env.VITE_GOOGLE_TAG);
+// console.log(process.env.VITE_GOOGLE_TAG);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
