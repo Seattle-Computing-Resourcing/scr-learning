@@ -9,23 +9,30 @@ dotenv.config()
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [
-    'script',
-   { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$' }, 
+    //Google Analytics
+    [
+      'script',
+      { async: '', src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$` }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-${process.env.VITE_GOOGLE_TAG}$');`
+    ],
+    
+    // Google AdSense
+    // [
+    //   "script",
+    //   {
+    //     "data-ad-client": "YOURCLIENTID",
+    //     async: '',
+    //     src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    //   },
+    // ],
   ],
-  // head: [
-  //   [
-  //     'script',
-  //     {
-  //       async: '',
-  //       src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$`,
-  //     },
-  //   ],
-  //   [
-  //     'script',
-  //     {},
-  //     `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-${process.env.VITE_GOOGLE_TAG}$');`,
-  //   ],
-  // ],
   markdown: {
     config: (md) => {
       md.use(mathjax3);
