@@ -8,20 +8,20 @@ dotenv.config()
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [
-    [
-      'script',
-      {
-        async: '',
-        src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$`,
-      },
-    ],
-    [
-      'script',
-      {},
-      `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-${process.env.VITE_GOOGLE_TAG}$');`,
-    ],
-  ],
+  // head: [
+  //   [
+  //     'script',
+  //     {
+  //       async: '',
+  //       src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$`,
+  //     },
+  //   ],
+  //   [
+  //     'script',
+  //     {},
+  //     `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-${process.env.VITE_GOOGLE_TAG}$');`,
+  //   ],
+  // ],
   markdown: {
     config: (md) => {
       md.use(mathjax3);
