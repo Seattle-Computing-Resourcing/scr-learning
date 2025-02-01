@@ -4,18 +4,18 @@ layout: home
 
 hero:
   name: "Seattle Computing Resourcing"
-  text: "Learning & Exercises"
-  tagline: 
+  text: ""
+  tagline: "yes"
   actions:
     - theme: brand
       text: Start Learning
-      link: /learning/gettingstarted
+      link: /resources/gettingstarted
     - theme: brand
-      text: Solve Exercises
-      link: /exercises/markdown-examples
+      text: Join a Contest
+      link: /contests
     - theme: alt
-      text: Main Site
-      link: https://seattlecr.vercel.app
+      text: Contact Us
+      link: /contact
   image:
     light: /lightmode.png
     dark: /darkmode.png
@@ -27,4 +27,6 @@ features:
     details: Exercises are provided, each with their own solution.
   - title: Many Applications
     details: C++, Python, and Java can be used in USACO, Leetcode, AP CS, etc.
+  - title: Competitions
+    details: Show off your skills in competitions hosted by SCR.
 ---

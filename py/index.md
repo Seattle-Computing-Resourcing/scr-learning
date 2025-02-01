@@ -9,13 +9,16 @@ hero:
   actions:
     - theme: brand
       text: Start Learning
-      link: /py/learning/api-examples
+      link: /learning/gettingstarted
     - theme: brand
       text: Solve Exercises
-      link: /py/exercises/markdown-examples
+      link: /exercises/markdown-examples
     - theme: alt
       text: Main Site
       link: https://seattlecr.vercel.app
+  image:
+    light: /lightmode.png
+    dark: /darkmode.png
 
 features:
   - title: Support for 3 Languages
@@ -25,4 +28,3 @@ features:
   - title: Many Applications
     details: C++, Python, and Java can be used in USACO, Leetcode, AP CS, etc.
 ---
-

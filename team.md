@@ -11,16 +11,39 @@ import {
 
 const boardMembers = [
     {
-        avatar: '/darkmode.png',
+        avatar: '/favicon.png',
         name: 'Test 1',
-        title: 'Test 2'
+        title: 'Test 2',
+        links: [{icon: 'github', link: 'https://github.com/Seattle-Computing-Resourcing' }],
+        // desc: `
+        // `,
+    },
+    {
+        avatar: '/favicon.png',
+        name: 'Test 1',
+        title: 'Test 2',
+        links: [{icon: 'github', link: 'https://github.com/Seattle-Computing-Resourcing' }],
+        // desc: `
+        // `,
     },
 ]
 
-const partners = [
+const contentwriters = [
     {
-        name: 'Test 1', 
-        title: 'Test 2'
+      avatar: '/favicon.png',
+      name: 'Test 1',
+      title: 'Test 2',
+      links: [{icon: 'github', link: 'https://github.com/Seattle-Computing-Resourcing' }],
+      // desc: `
+      // `,
+    },
+    {
+      avatar: '/favicon.png',
+      name: 'Test 1',
+      title: 'Test 2',
+      links: [{icon: 'github', link: 'https://github.com/Seattle-Computing-Resourcing' }],
+      // desc: `
+      // `,
     },
 ]
 </script>
@@ -32,14 +55,39 @@ const partners = [
     <VPTeamPageSection>
     <template #title>Board</template>
     <template #members>
-        <VPTeamMembers size="medium" :members="boardMembers" />
+        <VPTeamMembers size="medium " :members="boardMembers" />
     </template>
   </VPTeamPageSection>
 
   <VPTeamPageSection>
-    <template #title>Contributors</template>
+    <template #title>Content Writers</template>
     <template #members>
-      <VPTeamMembers size="small" :members="partners" />
+      <VPTeamMembers size="small" :members="contentwriters" />
+    </template>
+  </VPTeamPageSection>
+
+  <VPTeamPageSection>
+    <template #title>GitHub Contributors</template>
+    <template #members>
+      <div className="gitcontri">
+        <ul>
+          <a href="https://github.com/Streakwind">Streakwind</a>
+        </ul>
+      </div>
     </template>
   </VPTeamPageSection>
 </VPTeamPage>
+
+<style>
+  .gitcontri {
+    text-align: center;
+  }
+
+  ul a:hover {
+    color: green;
+  }
+
+  .dark ul a:hover {
+    color: lightgreen;
+  }
+</style>
