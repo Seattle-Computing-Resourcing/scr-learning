@@ -120,9 +120,4 @@
     background: #0056b3;
   }
 
-  .icon {
-    width: 18px;
-    height: 18px;
-    stroke: white;
-  }
 </style>
