@@ -42,8 +42,8 @@ export default defineConfig({
   },
   locales: {
     root: {
-      label: 'C++',
-      lang: 'cpp',
+      label: 'English',
+      lang: 'en',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
@@ -51,27 +51,26 @@ export default defineConfig({
             text: 'Learning',
             items: [
               {
-                text: 'Resources',
-                link: '/resources/gettingstarted'
+                text: 'C++',
+                link: '/cpp/gettingstarted'
+              },
+              {
+                text: 'Python',
+                link: '/py/gettingstarted'
+              },
+              {
+                text: 'Java',
+                link: '/java/gettingstarted'
               },
               {
                 text: 'Exercises',
-                link: '/exercises/markdown-examples'
+                link: '/exercises/cpp/print'
               },
             ] 
           },
           { 
-            text: 'Competitions',
-            items: [
-              {
-                text: 'Contests',
-                link: '/contests'
-              },
-              {
-                text: 'Hackathons',
-                link: '/hackathons'
-              },
-            ] 
+            text: 'Contests',
+            link: '/contests'
           },
           { 
             text: 'About Us',
@@ -92,230 +91,116 @@ export default defineConfig({
           },
         ],
         sidebar: {
-          '/resources/': [
+          '/cpp/': [
             {
               text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'Getting Started', link: '/resources/gettingstarted' },
-                { text: 'Headers', link: '/resources/headers' },
-                { text: 'Primitive Datatypes', link: '/resources/primitivedt' },
-                { text: 'Input and Output', link: '/resources/inputoutput' },
-                { text: 'Arithmetic Operations', link: '/resources/arithmeticoperations' },
-                { text: 'Conditions', link: '/resources/conditions' },
+                { text: 'Getting Started', link: '/cpp/gettingstarted' },
+                { text: 'Headers', link: '/cpp/headers' },
+                { text: 'Primitive Datatypes', link: '/cpp/primitivedt' },
+                { text: 'Input and Output', link: '/cpp/inputoutput' },
+                { text: 'Arithmetic Operations', link: '/cpp/arithmeticoperations' },
+                { text: 'Conditions', link: '/cpp/conditions' },
               ]
             },
             {
               text: 'Object Oriented Programming',
               collapsed: false,
               items: [
-                { text: 'OOP', link: '/resources/oop' },
+                { text: 'OOP', link: '/cpp/oop' },
               ]
             },
             {
               text: 'Arrays, Vectors, and Strings',
               collapsed: false,
               items: [
-                { text: 'Arrays', link: '/resources/arrays' },
-                { text: 'Vectors', link: '/resources/vectors' },
-                { text: 'Strings', link: '/resources/strings' },
+                { text: 'Arrays', link: '/cpp/arrays' },
+                { text: 'Vectors', link: '/cpp/vectors' },
+                { text: 'Strings', link: '/cpp/strings' },
               ]
             },
             {
               text: 'Loops',
               collapsed: false,
               items: [
-                { text: 'Loops', link: '/resources/loops' },
+                { text: 'Loops', link: '/cpp/loops' },
               ]
             },
             {
               text: 'Sorting',
               collapsed: false,
               items: [
-                { text: 'Sorting', link: '/resources/sorting' },
+                { text: 'Sorting', link: '/cpp/sorting' },
               ]
             },
             {
               text: 'Maps and Sets',
               collapsed: false,
               items: [
-                { text: 'Maps and Sets', link: '/resources/mapsandsets' },
+                { text: 'Maps and Sets', link: '/cpp/mapsandsets' },
               ]
             },
             {
               text: 'Intermediate D.S.',
               collapsed: false,
               items: [
-                { text: 'Intermediate D.S.', link: '/resources/intermediateds' },
+                { text: 'Intermediate D.S.', link: '/cpp/intermediateds' },
               ]
             },
             {
               text: 'Pointers',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/resources/pointers' },
+                { text: 'API examples', link: '/cpp/pointers' },
               ]
             },
             {
               text: 'Graphs',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/resources/graphs' },
+                { text: 'API examples', link: '/cpp/graphs' },
+              ]
+            },
+          ],
+          '/py/': [
+            {
+              text: 'Introduction to CS',
+              collapsed: false,
+              items: [
+                { text: 'Getting Started', link: '/py/gettingstarted' },
+              ]
+            },
+          ],
+          '/java/': [
+            {
+              text: 'Introduction to CS',
+              collapsed: false,
+              items: [
+                { text: 'Getting Started', link: '/java/gettingstarted' },
               ]
             },
           ],
           '/exercises/': [
             {
-              text: 'Exercises',
+              text: 'C++',
               collapsed: false,
               items: [
-                { text: 'Markdown examples', link: '/exercises/markdown-examples' },
+                { text: 'Print', link: '/exercises/cpp/print' },
               ]
             },
-          ],
-        }
-      }
-    },
-    py: {
-      label: 'Python',
-      lang: 'py',
-      link: '/py',
-      themeConfig: {
-        nav: [
-          { text: 'Home', link: '/' },
-          { 
-            text: 'Learning',
-            items: [
-              {
-                text: 'Resources',
-                link: '/py/resources/gettingstarted'
-              },
-              {
-                text: 'Exercises',
-                link: '/py/exercises/markdown-examples'
-              },
-            ] 
-          },
-          { 
-            text: 'Competitions',
-            items: [
-              {
-                text: 'Contests',
-                link: '/py/contests'
-              },
-              {
-                text: 'Hackathons',
-                link: '/py/hackathons'
-              },
-            ] 
-          },
-          { 
-            text: 'About Us',
-            items: [
-              {
-                text: 'Information',
-                link: '/py/info'
-              },
-              {
-                text: 'Team',
-                link: '/py/team'
-              },
-              {
-                text: 'Contact Us',
-                link: '/py/contact'
-              },
-            ] 
-          },
-        ],
-        sidebar: {
-          '/py/resources/': [
             {
-              text: 'resources',
+              text: 'Python',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/py/resources/api-examples' },
+                { text: 'Print', link: '/exercises/py/print' },
               ]
             },
-          ],
-          '/py/exercises/': [
             {
-              text: 'Exercises',
+              text: 'Java',
               collapsed: false,
               items: [
-                { text: 'Markdown examples', link: '/py/exercises/markdown-examples' },
-              ]
-            },
-          ],
-        }
-      }
-    },
-    java: {
-      label: 'Java',
-      lang: 'java',
-      link: '/java',
-      themeConfig: {
-        nav: [
-          { text: 'Home', link: '/' },
-          { 
-            text: 'Learning',
-            items: [
-              {
-                text: 'Resources',
-                link: '/java/resources/gettingstarted'
-              },
-              {
-                text: 'Exercises',
-                link: '/java/exercises/markdown-examples'
-              },
-            ] 
-          },
-          { 
-            text: 'Competitions',
-            items: [
-              {
-                text: 'Contests',
-                link: '/java/contests'
-              },
-              {
-                text: 'Hackathons',
-                link: '/java/hackathons'
-              },
-            ] 
-          },
-          { 
-            text: 'About Us',
-            items: [
-              {
-                text: 'Information',
-                link: '/java/info'
-              },
-              {
-                text: 'Team',
-                link: '/java/team'
-              },
-              {
-                text: 'Contact Us',
-                link: '/java/contact'
-              },
-            ] 
-          },
-        ],
-        sidebar: {
-          '/java/resources/': [
-            {
-              text: 'resources',
-              collapsed: false,
-              items: [
-                { text: 'API examples', link: '/java/resources/api-examples' },
-              ]
-            },
-          ],
-          '/java/exercises/': [
-            {
-              text: 'Exercises',
-              collapsed: false,
-              items: [
-                { text: 'Markdown examples', link: '/java/exercises/markdown-examples' },
+                { text: 'Print', link: '/exercises/java/print' },
               ]
             },
           ],
@@ -339,7 +224,7 @@ export default defineConfig({
       text: 'Updated at',
       formatOptions: {
         dateStyle: 'full',
-        timeStyle: 'short'
+        timeStyle: 'full'
       }
     },
     socialLinks: [
@@ -358,5 +243,4 @@ export default defineConfig({
     },
   },
   cleanUrls: true,
-  lastUpdated: true,
 })
