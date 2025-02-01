@@ -8,6 +8,11 @@ dotenv.config()
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    'script',
+-   { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$' }
++   { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-${process.env.VITE_GOOGLE_TAG}$' }
+  ],
   // head: [
   //   [
   //     'script',
