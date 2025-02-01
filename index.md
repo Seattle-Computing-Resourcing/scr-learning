@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Main Site
       link: https://seattlecr.vercel.app
+  image:
+    light: /lightmode.png
+    dark: /darkmode.png
 
 features:
   - title: Support for 3 Languages

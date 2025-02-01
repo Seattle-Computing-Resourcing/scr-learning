@@ -45,79 +45,120 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Learning', link: '/learning/gettingstarted' },
-          { text: 'Exercises', link: '/exercises/markdown-examples' },
+          { 
+            text: 'Learning',
+            items: [
+              {
+                text: 'Resources',
+                link: '/resources/gettingstarted'
+              },
+              {
+                text: 'Exercises',
+                link: '/exercises/markdown-examples'
+              },
+            ] 
+          },
+          { 
+            text: 'Competitions',
+            items: [
+              {
+                text: 'Contests',
+                link: '/contests'
+              },
+              {
+                text: 'Hackathons',
+                link: '/hackathons'
+              },
+            ] 
+          },
+          { 
+            text: 'About Us',
+            items: [
+              {
+                text: 'Information',
+                link: '/info'
+              },
+              {
+                text: 'Team',
+                link: '/team'
+              },
+              {
+                text: 'Contact Us',
+                link: '/contact'
+              },
+            ] 
+          },
         ],
         sidebar: {
-          '/learning/': [
+          '/resources/': [
             {
               text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'Getting Started', link: '/learning/gettingstarted' },
-                { text: 'Headers', link: '/learning/headers' },
-                { text: 'Primitive Datatypes', link: '/learning/primitivedt' },
-                { text: 'Input and Output', link: '/learning/inputoutput' },
-                { text: 'Arithmetic Operations', link: '/learning/arithmeticoperations' },
-                { text: 'Conditions', link: '/learning/conditions' },
+                { text: 'Getting Started', link: '/resources/gettingstarted' },
+                { text: 'Headers', link: '/resources/headers' },
+                { text: 'Primitive Datatypes', link: '/resources/primitivedt' },
+                { text: 'Input and Output', link: '/resources/inputoutput' },
+                { text: 'Arithmetic Operations', link: '/resources/arithmeticoperations' },
+                { text: 'Conditions', link: '/resources/conditions' },
               ]
             },
             {
               text: 'Object Oriented Programming',
               collapsed: false,
               items: [
-                { text: 'OOP', link: '/learning/oop' },
+                { text: 'OOP', link: '/resources/oop' },
               ]
             },
             {
               text: 'Arrays, Vectors, and Strings',
               collapsed: false,
               items: [
-                { text: 'Arrays', link: '/learning/arrays' },
-                { text: 'Vectors', link: '/learning/vectors' },
-                { text: 'Strings', link: '/learning/strings' },
+                { text: 'Arrays', link: '/resources/arrays' },
+                { text: 'Vectors', link: '/resources/vectors' },
+                { text: 'Strings', link: '/resources/strings' },
               ]
             },
             {
               text: 'Loops',
               collapsed: false,
               items: [
-                { text: 'Loops', link: '/learning/loops' },
+                { text: 'Loops', link: '/resources/loops' },
               ]
             },
             {
               text: 'Sorting',
               collapsed: false,
               items: [
-                { text: 'Sorting', link: '/learning/sorting' },
+                { text: 'Sorting', link: '/resources/sorting' },
               ]
             },
             {
               text: 'Maps and Sets',
               collapsed: false,
               items: [
-                { text: 'Maps and Sets', link: '/learning/mapsandsets' },
+                { text: 'Maps and Sets', link: '/resources/mapsandsets' },
               ]
             },
             {
               text: 'Intermediate D.S.',
               collapsed: false,
               items: [
-                { text: 'Intermediate D.S.', link: '/learning/intermediateds' },
+                { text: 'Intermediate D.S.', link: '/resources/intermediateds' },
               ]
             },
             {
               text: 'Pointers',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/learning/pointers' },
+                { text: 'API examples', link: '/resources/pointers' },
               ]
             },
             {
               text: 'Graphs',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/learning/graphs' },
+                { text: 'API examples', link: '/resources/graphs' },
               ]
             },
           ],
@@ -140,16 +181,16 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/py/' },
-          { text: 'Learning', link: '/py/learning/api-examples' },
+          { text: 'resources', link: '/py/resources/api-examples' },
           { text: 'Exercises', link: '/py/exercises/markdown-examples' },
         ],
         sidebar: {
-          '/py/learning/': [
+          '/py/resources/': [
             {
-              text: 'Learning',
+              text: 'resources',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/py/learning/api-examples' },
+                { text: 'API examples', link: '/py/resources/api-examples' },
               ]
             },
           ],
@@ -172,16 +213,16 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/java/' },
-          { text: 'Learning', link: '/java/learning/api-examples' },
+          { text: 'resources', link: '/java/resources/api-examples' },
           { text: 'Exercises', link: '/java/exercises/markdown-examples' },
         ],
         sidebar: {
-          '/java/learning/': [
+          '/java/resources/': [
             {
-              text: 'Learning',
+              text: 'resources',
               collapsed: false,
               items: [
-                { text: 'API examples', link: '/java/learning/api-examples' },
+                { text: 'API examples', link: '/java/resources/api-examples' },
               ]
             },
           ],
@@ -201,6 +242,21 @@ export default defineConfig({
   title: "SCR",
   description: "Learning",
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/Seattle-Computing-Resourcing/scr-learning/edit/main/:path',
+      text: 'Contribute to this page on GitHub'
+    },
+    footer: {
+      message: 'Seattle Computing Resourcing',
+      copyright: 'Copyright © 2024-present Seattle Computing Resourcing',
+    },
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'short'
+      }
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Seattle-Computing-Resourcing' },
       {
