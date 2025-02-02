@@ -26,13 +26,6 @@ import {
             </div>
         </template>
     </VPTeamPageSection>
-    <!-- <VPTeamPageSection>
-        <template #title>2026</template>
-        <template #members>
-            <div className="container">
-            </div>
-        </template>
-    </VPTeamPageSection> -->
 </VPTeamPage>
 
 <style>
