@@ -98,7 +98,7 @@ export default defineConfig({
               items: [
                 { text: 'Getting Started', link: '/cpp/gettingstarted' },
                 { text: 'Headers', link: '/cpp/headers' },
-                { text: 'Primitive Datatypes', link: '/cpp/primitivedt' },
+                { text: 'Datatypes', link: '/cpp/datatypes' },
                 { text: 'Input and Output', link: '/cpp/inputoutput' },
                 { text: 'Arithmetic Operations', link: '/cpp/arithmeticoperations' },
                 { text: 'Conditions', link: '/cpp/conditions' },
@@ -247,4 +247,5 @@ export default defineConfig({
   title: "SCR",
   description: "Resources for learning computer science along with contests.",
   cleanUrls: true,
+  lastUpdated: true,
 })
