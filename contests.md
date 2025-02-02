@@ -17,7 +17,7 @@ import {
     <VPTeamPageSection>
         <template #title>2025</template>
         <template #members>
-            <div className="container">
+            <div className="contest-card-container">
                 <Card name="Test" 
                     date="Jan 1 2025" 
                     description ="yayayayayaay" 
@@ -36,7 +36,7 @@ import {
 </VPTeamPage>
 
 <style>
-    .container {
+    .contest-card-container {
         display: flex;
         flex-wrap: wrap;         
         justify-content: center;  
