@@ -71,7 +71,7 @@ const contentwriters = [
     <template #members>
       <div className="gitcontri">
         <ul>
-          <a href="https://github.com/Streakwind">Streakwind</a>
+          <a href="https://github.com"></a>
         </ul>
       </div>
     </template>
