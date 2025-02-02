@@ -186,6 +186,7 @@ export default defineConfig({
               text: 'C++',
               collapsed: false,
               items: [
+                { text: 'C++ Exercises', link: '/exercises/cpp/cpp' },
                 { text: 'Print', link: '/exercises/cpp/print' },
               ]
             },
@@ -193,6 +194,7 @@ export default defineConfig({
               text: 'Python',
               collapsed: false,
               items: [
+                { text: 'Python Exercises', link: '/exercises/py/python' },
                 { text: 'Print', link: '/exercises/py/print' },
               ]
             },
@@ -200,6 +202,7 @@ export default defineConfig({
               text: 'Java',
               collapsed: false,
               items: [
+                { text: 'Java Exercises', link: '/exercises/java/java' },
                 { text: 'Print', link: '/exercises/java/print' },
               ]
             },
