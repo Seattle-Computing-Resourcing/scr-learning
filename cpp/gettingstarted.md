@@ -147,9 +147,7 @@ A breakpoint momentarily pauses your code and allows you to monitor your variabl
 
 You might have noticed that a little rectangle has appeared with a few arrows and a stop button. 
 
-The details container below explains the use of all six buttons as well as the gray rectangle of six dots.
-
-::: details
+::: info Button Usages
 The leftmost object is a gray rectangle made out of six dots. You can hold it to drag the little rectangle with the buttons around.
 
 The first button skips to your next breakpoint.
@@ -164,6 +162,62 @@ The last button stops the debugging process.
 :::
 
 The last important concept of debugging is a **watch**. In the watch window, you can add a new expression. The window displays the value of that expression at each breakpoint/line.
+
+## Comments
+Comments are important in programming in general. Commented lines are lines that the compiler will not read. They are usually done to describe what methods do, what certain lines of code do, or just code that you think doesn't work.
+
+::: tip
+The hotkey `Ctrl + /` or `Cmd + /` (if you're on MacOS) in VSCode comments out lines that you have selected, or the line you are currently editing if none are selected.
+:::
+
+### Single-line Comments
+In C++, a single-line comment is two forward slashes: `//`.
+
+An example of this in usage is this:
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main () {
+    cout << "Hello, world!" << endl;
+    // cout << "Hello, world! x2" << endl;
+    // cout << "Hello, world! x3" << endl;
+
+    return 0;
+}
+```
+
+The program runs without any compilation errors, and prints the folowing:
+```
+Hello, world!
+```
+
+### Multiple-line Comments
+In C++, a multiple-line comment is `/* */`.
+
+An example of this in usage is this:
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main () {
+    cout << "Hello, world!" << endl;
+    /* 
+    cout << "Hello, world! x2" << endl;
+    cout << "Hello, world! x3" << endl;
+    */
+
+    return 0;
+}
+```
+
+The program runs without any compilation errors, and prints the folowing:
+```
+Hello, world!
+```
+
 ## Importing/Including
 
 In C++, there is a _standard library_ of classes and functions that is written in and part of the C++ language. 
@@ -291,6 +345,12 @@ One more way to do this is to type `using`.
 ```cpp
 using ll = long long;
 ```
+
+All the methods above are valid in competitive programming.
+
+Make sure to use these in contests, especially if your typing speed is not that good! They will save a lot of time.
+
+A lot of newer USACO problems require the use of `long long`s, but don't always specify.
 
 ## Conclusion
 With your IDE and compiler installed, you should be set for future C++ projects. This guide covered many aspects about VSCode, but did not go in depth.
