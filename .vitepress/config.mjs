@@ -46,7 +46,7 @@ export default defineConfig({
       lang: 'en',
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/' },
+          { text: 'Home', link: '/'},
           { 
             text: 'Learning',
             items: [
@@ -66,11 +66,13 @@ export default defineConfig({
                 text: 'Exercises',
                 link: '/exercises/cpp/print'
               },
-            ] 
+            ],
+            activeMatch: '^/(cpp|py|java|exercises)/'
           },
           { 
             text: 'Contests',
-            link: '/contests'
+            link: '/contests',
+            activeMatch: '/contests/'
           },
           { 
             text: 'About Us',
@@ -87,7 +89,7 @@ export default defineConfig({
                 text: 'Contact Us',
                 link: '/contact'
               },
-            ] 
+            ],
           },
         ],
         sidebar: {

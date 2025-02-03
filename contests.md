@@ -18,10 +18,9 @@ import {
         <template #title>2025</template>
         <template #members>
             <div className="contest-card-container">
-                <Card name="Test" 
-                    date="Jan 1 2025" 
-                    description ="yayayayayaay" 
-                    link="https://github.com" 
+                <Card name="Contest 1" 
+                    date="TBD" 
+                    description ="Our first contest. More details <a href='/contests/contest1' class='link'>here</a>." 
                 />
             </div>
         </template>

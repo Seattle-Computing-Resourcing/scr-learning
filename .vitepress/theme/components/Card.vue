@@ -13,10 +13,10 @@
       </div>
 
       <div class="card-back">
-        <p class="card-description">{{ description }}</p>
-        <a :href="link" target="_blank" rel="noopener noreferrer" class="card-icon">
+        <p class="card-description" v-html="description"></p>
+        <!-- <a :href="link" target="_blank" rel="noopener noreferrer" class="card-icon">
           <img class="linkIcon" />
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
@@ -53,13 +53,13 @@ const handleHover = (state) => {
 </script>
 
 <style scoped>
-.linkIcon {
+/* .linkIcon {
   content: url("/black.png");
 }
 
 .dark .linkIcon {
   content: url("/white.png");
-}
+} */
 
 .card {
   width: 320px;
@@ -91,7 +91,6 @@ const handleHover = (state) => {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
 }
 
@@ -100,32 +99,59 @@ const handleHover = (state) => {
   border: 1px solid #ddd;
 }
 
+.dark .card-front {
+  background: #333;
+  border: 1px solid #333;
+}
+
 .card-back {
-  background: #007bff;
+  background: white;
   color: white;
   transform: rotateY(180deg);
   text-align: center;
   padding: 16px;
+  border: 1px solid #ddd;
+}
+
+.dark .card-back {
+  background: #333;
+  border: 1px solid #333;
 }
 
 .card-title {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #333;
+  color: #222222;
+}
+
+.dark .card-title {
+  color: #F8F9FA;
 }
 
 .card-date {
   font-size: 0.9rem;
-  color: #666;
+  color: #555555;
+}
+
+.dark .card-date {
+  color: #B0B0B0;
 }
 
 .card-description {
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: #333333;
 }
 
-.card-icon {
+.dark .card-description {
+  color: #E0E0E0;
+}
+
+:deep(.card-description a) {
+  text-decoration: underline;
+}
+
+/* .card-icon {
   position: absolute;
   bottom: 12px;
   right: 12px;
@@ -138,9 +164,9 @@ const handleHover = (state) => {
   background: #007bff;
   color: white;
   transition: background 0.3s ease-in-out;
-}
+} */
 
-.card-icon:hover {
+/* .card-icon:hover {
   background: #0056b3;
-}
+} */
 </style>
