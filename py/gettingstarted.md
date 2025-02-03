@@ -1,300 +1,153 @@
----
-outline: deep
----
-# Getting Started
-This page will document the basics of C++ along with how to setup C++ on your machine.
+# Getting an IDE
 
-## Installation
-First, we must install an integrated development environment, commonly known as an IDE. An IDE allows us to edit and run code.
+If you use an online IDE such as [ide.usaco.guide](https://ide.usaco.guide) or [Replit](https://replit.com) you don't need to follow this part.
 
-You can skip this step if you use online IDEs like [ide.usaco.guide](https://ide.usaco.guide) or [Replit](https://replit.com).
+An IDE (short for Integrated Development Environment) allows you to edit and run code! This course uses Visual Studio Code (or VSCode) but there are many other good IDEs out there.
 
-The most common IDE used is [VSCode](https://code.visualstudio.com/), but there are many options as well. For example, a great alternative is [Dev C++](https://bloodshed.net/).
+### Installing VSCode
 
-This website will be using VSCode as the main IDE.
+Head to [this site](https://code.visualstudio.com/download) and follow the instructions for your system.
 
-Next, we want to install a compiler. Different operating systems have different methods of installation, so just read the section detailing your OS.
-### Linux
-Installation is simple, just run the following two commands:
+Then open VSCode.
+
+### Installing Python
+
+In VSCode, look at the left bar and select **"Extensions"**. Or, press *Ctrl + X*.
+
+Type in "Python" and install the extensions called **"Python"** and **"Python Debugger"**.
+
+# First Program
+
+### A New File
+
+Click "File" then "New Text File". Or, press *Ctrl + N*.
+
+Press "Select a language".
+
+Type in "Python" and select it.
+
+### Coding
+
+Then, you can type any code you wish in the file. For now, paste in:
 ```
-sudo apt-get update
-sudo apt-get install build-essential gdb
+print("Hello World!")
 ```
-
-Then, to check your installation, run the following command:
-```
-gcc -v
-```
-
-This applies for WSL (Windows Subsystem for Linux) as well.
-
-### Windows
-We will be using [MSYS2](https://www.msys2.org/) in this website.
-
-First, download the installer found on the homepage. Follow the prompts that it asks you.
-
-Once installed, open `MSYS2 UCRT64` and use the following command to install `gcc`:
-```
-pacman -S mingw-w64-ucrt-x86_64-gcc
-```
-
-To check your installation, type one of the following in the command prompt or powershell:
-```
-gcc --version
-gdb --version
-g++ --version
-```
-
-### MacOS
-In the terminal, write:
-```
-xcode-select --install
-```
-
-Check your installation with:
-```
-clang --version
-```
-
-## Creating a Project
-### Extensions
-When using C++ in VSCode, make sure to install the C++ Extension. This is called `C/C++` in the extension marketplace.
-
-Optionally, you can install `C/C++ Extension Pack` as well as `C/C++ Themes` to enhance your experience.
-
-### Creating a Directory
-::: tip
-If using VSCode, you can open a folder by moving (`cd`) to their directory and then typing `code .`
-This will open that directory, which will be called your "workspace"
-:::
-
-Create a directory and open it with the following:
-```
-mkdir MyProject
-cd MyProject
-code .
-```
-
-Then, press the new file button in the explorer to make a new file.
-Name it `test.cpp` and past the following:
-```cpp
-#include <iostream>
-int main () {
-    std::cout << "Hello, world!\n";
-    return 0;
-}
-```
-Don't worry if you don't understand any of the code written above. It will all be explained in the next section.
+Congratulations- you've written your first code!
 
 ### Running the Code
-In VSCode, press the play button on the top right, below the minimize (-) button. On the first run, you will be prompted to choose a compiler.
 
-Linux: choose the `g++ build and debug active file` configuration
+To run the code, click on the triangle in the top right corner. You will initially need to save the code, do so anywhere you wish.
 
-Windows: choose the `C/C++: g++.exe build and debug active file` configuration.
+The code should output "Hello World!" to the terminal - found at the bottom of the screen.
 
-MacOS: choose the `C/C++: clang++ build and debug active file` configuration.
+# Error Messages
 
-During your first run, a `.vscode` folder will be created in your workspace. This will contain a `.json` file that called `tasks.json`.
+When you write code incorrectly, your IDE cannot run it; but, it usually can tell you what you did wrong.
 
-The `tasks.json` file varies between operating systems. The variation is not too large though. On Windows, it should look similar to this.
-```json
-{
-    "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Task generated by Debugger."
-        }
-    ],
-    "version": "2.0.0"
-}
+As an example, remove the last parenthesis in your code from before, so it looks like:
+```
+print("Hello World!"
+```
+When you run this, Python will throw a **SyntaxError** and point to the line with the error (or close to it, such as this example). 
+
+There are many other error types which we will get to later.
+
+# Debugging
+
+When a program gets complicated, it is very easy to make a mistake in the logic of the code. You will experience this many times in later lessons. Luckily, there is a way to fix such mistakes!
+
+**Debugging** allows you to run through your code step-by-step and see the current state of the program.
+
+### Breakpoints
+
+First, you need a **breakpoint**. That is where the code will stop running so you can look at its state.
+
+To make one, bring your cursor slightly to the left of the line numbers, and click. A small red circle should show up there.
+
+To remove a breakpoint, just click on it.
+
+### Triggering Debugging
+
+Then you need to trigger your debugging.
+
+To do this, click on the drop-down arrow by the run button; then, click on "Python Debugger: Debug Python File".
+
+After everything loads, you will find your first breakpoint highlighted in yellow - that shows where your code is currently at.
+
+### Using Debugger
+
+Now that your debugger is runnning, how do you use it?
+
+Somewhere near the top of the screen, a bar with seven icons will appear.
+
+The first icon looks like 6 dots in a rectangle. It lets you move the debugging bar.
+
+The second icon lets you run the program quickly, until the code reaches the next breakpoint. It is called "Continue" and can be triggered with F5.
+
+The third icon lets you run just the next line of code. It is called "Step Over" and can be triggered with F10.
+
+The fourth icon and fifth icon will be covered later- you don't need them right now.
+
+The sixth icon restarts your debugging from the beginning. It is called "Restart" and can be triggered by *Ctrl + Shift + F5*.
+
+The last icon stops running your code, in case you don't want to look at the rest of the program. It is called "Stop" and can be triggered by *Shift + F5*.
+
+# Comments
+
+Sometimes you may want to leave a note by some piece of code; maybe to explain what it does if it is particularly difficult to read. This is especially useful if you are sharing your code with other people.
+
+There are two ways to make comments in Python - a one-line comment, or a multiple-line comment.
+
+### One-line Comments
+
+A one-line comment just needs a hashtag, like this:
+```
+# print("Hello World!")
+```
+When you run the program, this line will not do anything.
+
+Here is an example of a comment as explanation:
+```
+# outputs "Hello World!".
+print("Hello World!")
 ```
 
-### Debugging
-Do you remember the play button you pressed to run it? There is a downward pointing arrow next to it, and when clicked, it shows the option to either run or debug.
+If you neglect to use the hashtag in the first line, Python will try to execute your words. When it cannot, your program will break. Try it!
 
-Because we are concerning debugging in this section, choose the `Debug C/C++ file`. Similar to running a file, on the first debug you will get a prompt asking for your desired compiler.
-This changes between operating systems.
+### Multiple-line Comments
 
-Linux: select `C/C++: g++ build and debug active file`
+Sometimes you want more than just one line of comments. Then, surround whatever text you want commented out with triple quote marks. Here is an example:
 
-Windows: select `C/C++: g++.exe build and debug active file`
-
-MacOS: select `C/C++: clang++ build and debug active file`
-
-When debugging, there is something called a **breakpoint**. You can create a breakpoint by hovering over the line number of your code and clicking the red dot that appears to your left. Clicking on the dot again deactivates the breakpoint.
-
-A breakpoint momentarily pauses your code and allows you to monitor your variables and their values at that timestamp.
-
-You might have noticed that a little rectangle has appeared with a few arrows and a stop button. 
-
-The details container below explains the use of all six buttons as well as the gray rectangle of six dots.
-
-::: details
-The leftmost object is a gray rectangle made out of six dots. You can hold it to drag the little rectangle with the buttons around.
-
-The first button skips to your next breakpoint.
-
-The second button skips to your next nonempty line.
-
-The third and fourth button are not very useful for competitive programming.
-
-The fifth button resets your debugging process, and makes you restart from the beginning.
-
-The last button stops the debugging process.
-:::
-
-The last important concept of debugging is a **watch**. In the watch window, you can add a new expression. The window displays the value of that expression at each breakpoint/line.
-## Importing/Including
-
-In C++, there is a _standard library_ of classes and functions that is written in and part of the C++ language. 
-
-In order to implement this library, simply import it directly into your code.
-
-```cpp
-#include <bits/stdc++.h>
 ```
-With this import statement, you are now able to any function part of the C++ library, including inputting and outputting, sorting, etc.
+''' This
+is a
 
-::: warning
-VSCode sometimes says there is an error when you try including `<bits/stdc++.h>`
-This can be fixed easily, just follow this [guide](https://codeforces.com/blog/entry/118427) published on Codeforces.
-
-This is okay though, as it usually compiles in USACO.
-
-It is best practice to include libraries separately but `<bits/stdc++.h>` is good for competitive programming.
-:::
-
-However, this standard library can also be split into several smaller libraries, which depending on their usage could decrease runtime. We will introduce how to import these smaller libraries later on in the course when we need to use those libraries.
-
-Here are some commonly used and important libraries that could be used in place of the standard library.
-
-| Library  | Usage |
-| :-------------: |:-------------:|
-| `#include <iostream> `      | Allows for Input and Output statements     |
-| `#include <algorithm>`      | Includes the sort and search functions     |
-| `#include <climits> `      | Allows for access of largest and smallest integers in C++     |
-| `#include <string>`| Allows for manipulation of Strings|
-|`#include <math.h>`| Provides the square root, logarithm, and power functions
-
-They are imported at the top of your code like this:
-```cpp
-#include <iostream>
-
-int main () {
-    //do stuff
-    return 0;
-}
+comment!
+'''
 ```
 
-::: tip 
-Don't worry if you don't understand this code yet. It will be explained later.
-:::
+Once again, nothing will happen if you run this. However, if you remove the triple quote marks, the program will crash.
 
-## Namespaces
+A typical way to use this is as a header for a program - stating what it does, who wrote it, and when.
 
-Namespaces are provided by the standard libraries in C++, and to use these functions provided by the previous libraries, you need to identify the namespace before calling any of the functions. Almost always, you will be using the **std namespace**. For example, when printing `Hello World!`:
+It is also often used with functions, but we'll get to that later.
 
-```cpp
-#include <iostream>
-int main() {
-    std::cout << "Hello World!" << std::endl;
-}
+# Importing
+
+Sometimes, basic Python just doesn't have what you need. (For example, a square root function!) Luckily, others have written programs - called "modules" - that have the needed functions! To include this code, just type
 ```
-Before each and every function to be used, you must write **std::** preceding the function. However, usually coders use a way to bypass the necessity of writing these identifiers, and this can be easily solved by declaring the identifier at the beginning of the function. The previous code block can now be changed into:
-
-```cpp
-#include <iostream>
-
-using namespace std;
-
-int main() {
-    cout << "Hello World!" << endl;
-}
+import 
 ```
-
-## Starting to Code
-
-The next and final line in the header is the **main function**. The code will only be run if it is written inside of this main function. To initialize this main function, the following code will be sufficient.
-```cpp
-int main() {
-    //code goes here
-}
+at the top of the file, then the name of your module. For example, the module math has a square root function; so let's import it!
 ```
-Let's break apart the syntax of this function. The first word, **int** signifies that an integer is returned as part of the function. Quite often in competitive coding, there will be no need to return anything from the main function, and although there will be nothing wrong, it is best coding practice to return the value 0 at the end of the function.
-```cpp
-int main() {
-    // code goes here
-    return 0;
-}
+import math
 ```
-Next, **main** signifies that the following code is part of the main function, and by defauly is the function that a C++ compiler will run. The empty parentheses signifies that no values are being put into the function, and the brackets represent the lines where the function is written in. For example, any lines written before the open bracket and after the closed bracket will not be run as part of the main function.
-
-## Macros
-Macros are used to shorten code, and can be thought of as abbreviations in coding. Macros are initialized in the header, usually placed after imports, but before namespaces. The following is an example of a commonly used header setup.
-```cpp
-#include <iostream>
-
-#define PRINT(x) cout << x << endl;
-using namespace std;
-
-int main() {
-    PRINT(123);
-    return 0;
-}
+That's it! Well, not really. To call the square root function, you need to use
 ```
-
-Expected Output:
+math.sqrt()
 ```
-123
-```
+Just remember to include that and you should be fine.
 
-In this code, the macro allows the coder to simply write PRINT(x) instead of the real printing line throughout the entire document. All macros are in the format of macro name followed by macro definition.
+# Conclusion
 
-Additionally, macros can be used to set a constant value, such as pi.
-```cpp
-#define PI 3.14159
-```
-
-Sometimes, datatypes have names that are a burden to type. An example of these data types is a `long long`, which has been increasingly popular in recent contests.
-
-You can make a type alias for it with the following code:
-```cpp
-typedef long long ll
-```
-
-Then, in later code segments, you can write
-```cpp
-ll x = 1234567890;
-```
-
-One more way to do this is to type `using`.
-```cpp
-using ll = long long;
-```
-
-## Conclusion
-With your IDE and compiler installed, you should be set for future C++ projects. This guide covered many aspects about VSCode, but did not go in depth.
-
-It is up to you to discover more capabilities of your IDE.
-
-Your basic knowledge of include files, namespaces, and macros will be useful tools in your competitive programming journey.
+Now you're all set to begin writing code! Good luck!
