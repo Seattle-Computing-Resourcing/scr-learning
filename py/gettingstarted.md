@@ -1,4 +1,14 @@
-# Getting an IDE
+---
+outline: deep
+---
+
+# Getting Started
+
+This lesson will lead you through installing and using everything you need to code. 
+
+It will also build a foundation for writing python, such as error messages, debugging, comments, and importing.
+
+## Getting an IDE
 
 If you use an online IDE such as [ide.usaco.guide](https://ide.usaco.guide) or [Replit](https://replit.com) you don't need to follow this part.
 
@@ -8,51 +18,59 @@ An IDE (short for Integrated Development Environment) allows you to edit and run
 
 Head to [this site](https://code.visualstudio.com/download) and follow the instructions for your system.
 
-Then open VSCode.
-
 ### Installing Python
 
-In VSCode, look at the left bar and select **"Extensions"**. Or, press *Ctrl + X*.
+To install python, head to [this site](https://www.python.org/downloads/) and follow their instructions for your system.
+
+In VSCode, look at the left bar and select **"Extensions"**. Or, press *Ctrl/Cmd + X*.
 
 Type in "Python" and install the extensions called **"Python"** and **"Python Debugger"**.
 
-# First Program
+## First Program
 
 ### A New File
 
-Click "File" then "New Text File". Or, press *Ctrl + N*.
+Continuing in VSCode:
 
-Press "Select a language".
+Click "File" (in the top left corner) then "New Text File" (in the drop-down menu). Or, press *Ctrl/Cmd + N*.
 
-Type in "Python" and select it.
+In the file that opens, you should see text. Press "Select a language" (highlighted in blue). Alternatively, press "Plain Text" on the bottom right. Both open a drop-down menu; type in "Python" and select it.
 
 ### Coding
 
 Then, you can type any code you wish in the file. For now, paste in:
-```
+``` py
 print("Hello World!")
 ```
 Congratulations- you've written your first code!
 
 ### Running the Code
 
-To run the code, click on the triangle in the top right corner. You will initially need to save the code, do so anywhere you wish.
+You will initially need to save the code, do so anywhere you wish. 
+
+::: tip
+You only need to save the file the first time you run it.
+:::
+
+Next, you may need to select an interpreter to run python. You can do this via a pop-up the first time you try to run, or in the bottom-right corner by clicking on the numbers (which represent your version) directly to the right of the word "Python". Both ways open a drop-down menu where you should select Python followed by your version number.
+
+To (finally!) run the code, click on the triangle in the top right corner.
 
 The code should output "Hello World!" to the terminal - found at the bottom of the screen.
 
-# Error Messages
+## Error Messages
 
 When you write code incorrectly, your IDE cannot run it; but, it usually can tell you what you did wrong.
 
 As an example, remove the last parenthesis in your code from before, so it looks like:
-```
+``` py
 print("Hello World!"
 ```
 When you run this, Python will throw a **SyntaxError** and point to the line with the error (or close to it, such as this example). 
 
 There are many other error types which we will get to later.
 
-# Debugging
+## Debugging
 
 When a program gets complicated, it is very easy to make a mistake in the logic of the code. You will experience this many times in later lessons. Luckily, there is a way to fix such mistakes!
 
@@ -92,7 +110,7 @@ The sixth icon restarts your debugging from the beginning. It is called "Restart
 
 The last icon stops running your code, in case you don't want to look at the rest of the program. It is called "Stop" and can be triggered by *Shift + F5*.
 
-# Comments
+## Comments
 
 Sometimes you may want to leave a note by some piece of code; maybe to explain what it does if it is particularly difficult to read. This is especially useful if you are sharing your code with other people.
 
@@ -101,24 +119,28 @@ There are two ways to make comments in Python - a one-line comment, or a multipl
 ### One-line Comments
 
 A one-line comment just needs a hashtag, like this:
-```
+``` py
 # print("Hello World!")
 ```
 When you run the program, this line will not do anything.
 
 Here is an example of a comment as explanation:
-```
+``` py
 # outputs "Hello World!".
 print("Hello World!")
 ```
 
 If you neglect to use the hashtag in the first line, Python will try to execute your words. When it cannot, your program will break. Try it!
 
+::: tip
+In VSCode, highlighting some lines then pressing *Ctrl/Cmd + /* will automatically comment them out.
+:::
+
 ### Multiple-line Comments
 
 Sometimes you want more than just one line of comments. Then, surround whatever text you want commented out with triple quote marks. Here is an example:
 
-```
+``` py
 ''' This
 is a
 
@@ -132,22 +154,22 @@ A typical way to use this is as a header for a program - stating what it does, w
 
 It is also often used with functions, but we'll get to that later.
 
-# Importing
+## Importing
 
 Sometimes, basic Python just doesn't have what you need. (For example, a square root function!) Luckily, others have written programs - called "modules" - that have the needed functions! To include this code, just type
-```
+``` py
 import 
 ```
 at the top of the file, then the name of your module. For example, the module math has a square root function; so let's import it!
-```
+``` py
 import math
 ```
 That's it! Well, not really. To call the square root function, you need to use
-```
+``` py
 math.sqrt()
 ```
 Just remember to include that and you should be fine.
 
-# Conclusion
+## Conclusion
 
 Now you're all set to begin writing code! Good luck!
