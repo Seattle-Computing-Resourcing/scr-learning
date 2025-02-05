@@ -47,27 +47,10 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/'},
-          { 
-            text: 'Learning',
-            items: [
-              {
-                text: 'C++',
-                link: '/cpp/gettingstarted'
-              },
-              {
-                text: 'Python',
-                link: '/py/gettingstarted'
-              },
-              {
-                text: 'Java',
-                link: '/java/gettingstarted'
-              },
-              {
-                text: 'Exercises',
-                link: '/exercises/cpp/print'
-              },
-            ],
-            activeMatch: '^/(cpp|py|java|exercises)/'
+          {
+            text: 'Press',
+            link: '/press',
+            activeMatch: '/press/'
           },
           { 
             text: 'Contests',
@@ -75,111 +58,133 @@ export default defineConfig({
             activeMatch: '/contests/'
           },
           { 
+            text: 'Learning',
+            items: [
+              {
+                text: 'C++',
+                link: '/learning/cpp/gettingstarted'
+              },
+              {
+                text: 'Python',
+                link: '/learning/py/gettingstarted'
+              },
+              {
+                text: 'Java',
+                link: '/learning/java/gettingstarted'
+              },
+              {
+                text: 'Exercises',
+                link: '/exercises/cpp/print'
+              },
+            ],
+            activeMatch: '^/(learning|exercises)/'
+          },
+          { 
             text: 'About Us',
             items: [
               {
                 text: 'Information',
-                link: '/info'
+                link: '/about/info'
               },
               {
                 text: 'Team',
-                link: '/team'
+                link: '/about/team'
               },
               {
                 text: 'Contact Us',
-                link: '/contact'
+                link: '/about/contact'
               },
             ],
           },
         ],
         sidebar: {
-          '/cpp/': [
+          '/learning/cpp/': [
             {
               text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'Getting Started', link: '/cpp/gettingstarted' },
-                { text: 'Headers', link: '/cpp/headers' },
-                { text: 'Datatypes', link: '/cpp/datatypes' },
-                { text: 'Input and Output', link: '/cpp/inputoutput' },
-                { text: 'Arithmetic Operations', link: '/cpp/arithmeticoperations' },
-                { text: 'Conditions', link: '/cpp/conditions' },
+                { text: 'Getting Started', link: '/learning/cpp/gettingstarted' },
+                { text: 'Headers', link: '/learning/cpp/headers' },
+                { text: 'Datatypes', link: '/learning/cpp/datatypes' },
+                { text: 'Input and Output', link: '/learning/cpp/inputoutput' },
+                { text: 'Arithmetic Operations', link: '/learning/cpp/arithmeticoperations' },
+                { text: 'Conditions', link: '/learning/cpp/conditions' },
               ]
             },
             {
               text: 'Object Oriented Programming',
               collapsed: false,
               items: [
-                { text: 'OOP', link: '/cpp/oop' },
+                { text: 'OOP', link: '/learning/cpp/oop' },
               ]
             },
             {
               text: 'Arrays, Vectors, and Strings',
               collapsed: false,
               items: [
-                { text: 'Arrays', link: '/cpp/arrays' },
-                { text: 'Vectors', link: '/cpp/vectors' },
-                { text: 'Strings', link: '/cpp/strings' },
+                { text: 'Arrays', link: '/learning/cpp/arrays' },
+                { text: 'Vectors', link: '/learning/cpp/vectors' },
+                { text: 'Strings', link: '/learning/cpp/strings' },
               ]
             },
             {
               text: 'Loops',
               collapsed: false,
               items: [
-                { text: 'Loops', link: '/cpp/loops' },
+                { text: 'Loops', link: '/learning/cpp/loops' },
               ]
             },
             {
               text: 'Sorting',
               collapsed: false,
               items: [
-                { text: 'Sorting', link: '/cpp/sorting' },
+                { text: 'Sorting', link: '/learning/cpp/sorting' },
               ]
             },
             {
               text: 'Maps and Sets',
               collapsed: false,
               items: [
-                { text: 'Maps and Sets', link: '/cpp/mapsandsets' },
+                { text: 'Maps and Sets', link: '/learning/cpp/mapsandsets' },
               ]
             },
             {
               text: 'Intermediate D.S.',
               collapsed: false,
               items: [
-                { text: 'Intermediate D.S.', link: '/cpp/intermediateds' },
+                { text: 'Intermediate D.S.', link: '/learning/cpp/intermediateds' },
               ]
             },
             {
               text: 'Pointers',
               collapsed: false,
               items: [
-                { text: 'Pointers', link: '/cpp/pointers' },
+                { text: 'Pointers', link: '/learning/cpp/pointers' },
               ]
             },
             {
               text: 'Graphs',
               collapsed: false,
               items: [
-                { text: 'Graphs', link: '/cpp/graphs' },
+                { text: 'Graphs', link: '/learning/cpp/graphs' },
               ]
             },
           ],
-          '/py/': [
+          '/learning/py/': [
             {
               text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'Getting Started', link: '/py/gettingstarted' },
+                { text: 'Getting Started', link: '/learning/py/gettingstarted' },
               ]
             },
           ],
-          '/java/': [
+          '/learning/java/': [
             {
               text: 'Introduction to CS',
               collapsed: false,
               items: [
-                { text: 'Getting Started', link: '/java/gettingstarted' },
+                { text: 'Getting Started', link: '/learning/java/gettingstarted' },
               ]
             },
           ],

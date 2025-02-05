@@ -9,13 +9,13 @@ hero:
   actions:
     - theme: brand
       text: Start Learning
-      link: /cpp/gettingstarted
+      link: /learning/cpp/gettingstarted
     - theme: brand
       text: Join a Contest
       link: /contests
     - theme: alt
       text: Contact Us
-      link: /contact
+      link: /about/contact
   image:
     light: /lightmode.png
     dark: /darkmode.png
