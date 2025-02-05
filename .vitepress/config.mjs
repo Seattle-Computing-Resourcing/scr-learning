@@ -47,11 +47,6 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/'},
-          {
-            text: 'Press',
-            link: '/press',
-            activeMatch: '/press/'
-          },
           { 
             text: 'Contests',
             link: '/contests',

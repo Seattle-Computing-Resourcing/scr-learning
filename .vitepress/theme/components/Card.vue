@@ -29,7 +29,6 @@ const props = defineProps({
   name: String,
   date: String,
   description: String,
-  link: String
 });
 
 const isFlipped = ref(false);
