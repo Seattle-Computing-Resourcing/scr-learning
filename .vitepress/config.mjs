@@ -74,22 +74,9 @@ export default defineConfig({
             ],
             activeMatch: '^/(learning|exercises)/'
           },
-          { 
-            text: 'About Us',
-            items: [
-              {
-                text: 'Information',
-                link: '/about/info'
-              },
-              {
-                text: 'Team',
-                link: '/about/team'
-              },
-              {
-                text: 'Contact Us',
-                link: '/about/contact'
-              },
-            ],
+          {
+            text: 'Contact',
+            link: '/contact',
           },
         ],
         sidebar: {
@@ -236,10 +223,6 @@ export default defineConfig({
           //   ariaLabel: 'main site',
           // },
         ],
-    
-        search: {
-          provider: 'local',
-        },
       },
     },
     
@@ -248,6 +231,11 @@ export default defineConfig({
     //   lang: 'fr',
     //   link: '/fr',
     // }
+  },
+  themeConfig: {
+    search: {
+      provider: 'local',
+    },
   },
   title: "SCR",
   description: "Resources for learning computer science along with contests.",

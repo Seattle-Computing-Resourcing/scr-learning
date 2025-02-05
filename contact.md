@@ -1,8 +1,9 @@
 ---
 editLink: false
 lastUpdated: false
+search: false
 ---
-# Contact us!
+# Contact
 <script setup>
   import Swal from 'sweetalert2'
   const onSubmit = async (event) => {

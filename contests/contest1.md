@@ -3,6 +3,7 @@ outline: deep
 editLink: false
 lastUpdated: false
 layout: home
+search: false
 ---
 # Contest 1
 ### Description
