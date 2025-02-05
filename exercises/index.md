@@ -3,10 +3,10 @@ outline: 3
 editLink: false
 lastUpdated: false
 ---
-# Python Exercises
-The following few pages will be exercises, in which you should write your solution in Python.
+# Exercises
+The following few pages will be exercises, in which you should write your solution in either C++, Python, or Java.
 
-Some of the exercises will be the same as exercises in C++ and Java, the only difference being that the solution to this problem is written in Python.
+Some of the exercises will be the same as exercises in other languages, the only difference being that the solution to the particular problem you are solving is written in the language you have selected.
 
 Make sure to read the question statement, input format, and output format. These are crucial to your understanding of the problem.
 
@@ -21,3 +21,5 @@ The key takeaway from these exercises is understanding how to read a problem. Th
 All of these exercises can be solved with skills that you have learned in the learning modules.
 
 Remember to read the solution! Even if your solution is correct but different, it is a good idea to learn how other approached the problem. If you have a different solution that you believe is good, feel free to submit a pull request. All of our exercise pages have a link that allows you to edit that specific exercise page.
+
+Sometimes we will have quiz-like questions. These questions will be answered through the terminal. For example, if a question asks what 1+1 is, you will print 2 into the terminal.

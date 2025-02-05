@@ -42,16 +42,12 @@ const boardMembers = [
         name: 'Timothy Wu',
         title: 'Founder',
         links: [{icon: 'github', link: 'https://github.com/HappyTeem' }],
-        // desc: `
-        // `,
     },
     {
         avatar: '/favicon.png',
         name: 'Ruben Jing',
         title: 'Founder',
         links: [{icon: 'github', link: 'https://github.com/Streakwind' }],
-        // desc: `
-        // `,
     },
 ]
 
@@ -61,63 +57,57 @@ const contentwriters = [
       name: 'Alan Verbitski',
       title: 'Python Content Writer',
       links: [{icon: 'github', link: 'https://github.com/veternosit' }],
-      // desc: `
-      // `,
     },
     {
       avatar: '/favicon.png',
       name: 'Benjamin Sun',
       title: 'C++ Content Writer',
       links: [{icon: 'github', link: 'https://github.com/walterboro' }],
-      // desc: `
-      // `,
     },
 ]
 </script>
-<h2 />
 
-<div className="teamHeading">
-  <h1>About Us </h1>
+<h2/>
+
+<div class="teamHeading">
+  <h1>About Us</h1>
 </div>
 
-<div className="index-content">
-  Seattle Computing Resourcing (SCR) is an organization based in Seattle, Washington. It was found in December of 2024. We provide resources for learning three different languages: C++, Python, and Java. We also occasionally host contests and hackathons.
+<div class="index-content">
+  Seattle Computing Resourcing (SCR) is an organization based in Seattle, Washington. It was founded in December of 2024. We provide resources for learning three different languages: C++, Python, and Java. We also occasionally host contests and hackathons.
 </div>
 
-<div className="index-content">
+<div class="index-content">
+  This is an open-source project, and we are open to contributors on GitHub. On the bottom of our learning pages, there is some blue text that says "Contribute to this page on GitHub." Feel free to click it and submit a pull request with your edits. More information about how to do that is found in the README.md file of our GitHub repository.
 
-
-This is an open source project, and we are open to contributors on GitHub. On the bottom of our learning pages, there is some blue text that says "Contribute to this page on GitHub." Feel free to click it and submit a pull request with your edits. More information about how to do that is found in the README.md file of our GitHub repository.
-
-
-You can also join our team! Just send us an email through the contact form on our website, and we'll ask for more details later.
+  You can also join our team! Just send us an email through the contact form on our website, and we'll ask for more details later.
 </div>
 
-<div className="teamHeading">
+<div class="teamHeading">
   <h1>Our Team</h1>
 </div>
 
-<div className="index-content">
-Our team consists of two board members and two content writers. As this website is open source, all contributors on GitHub are listed below as well.
+<div class="index-content">
+  Our team consists of two board members and two content writers. As this website is open-source, all contributors on GitHub are listed below as well.
 </div>
 
-<div className="teamHeading">
+<div class="teamHeading">
   <h2>Board Members</h2>
 </div>
 
 <VPTeamMembers size="small" :members="boardMembers" />
 
-<div className="teamHeading">
+<div class="teamHeading">
   <h2>Content Writers</h2>
 </div>
 
 <VPTeamMembers size="small" :members="contentwriters" />
 
-<div className="teamHeading">
+<div class="teamHeading">
   <h2>GitHub Contributors</h2>
 </div>
 
-<div className="gitcontri">
+<div class="gitcontri">
   <ul>
     <a href="https://github.com/Seattle-Computing-Resourcing/scr-learning">none :(</a>
   </ul>

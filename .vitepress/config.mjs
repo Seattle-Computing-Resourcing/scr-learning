@@ -69,7 +69,7 @@ export default defineConfig({
               },
               {
                 text: 'Exercises',
-                link: '/exercises/cpp/print'
+                link: '/exercises/'
               },
             ],
             activeMatch: '^/(learning|exercises)/'
@@ -172,10 +172,13 @@ export default defineConfig({
           ],
           '/exercises/': [
             {
+              text: 'Information', link: '/exercises/',
+            },
+            {
               text: 'C++',
               collapsed: false,
               items: [
-                { text: 'C++ Exercises', link: '/exercises/cpp/cpp' },
+                { text: 'C++ Exercises', link: '/exercises/cpp/' },
                 { text: 'Print', link: '/exercises/cpp/print' },
               ]
             },
@@ -183,7 +186,7 @@ export default defineConfig({
               text: 'Python',
               collapsed: false,
               items: [
-                { text: 'Python Exercises', link: '/exercises/py/python' },
+                { text: 'Python Exercises', link: '/exercises/py/' },
                 { text: 'Print', link: '/exercises/py/print' },
               ]
             },
@@ -191,7 +194,7 @@ export default defineConfig({
               text: 'Java',
               collapsed: false,
               items: [
-                { text: 'Java Exercises', link: '/exercises/java/java' },
+                { text: 'Java Exercises', link: '/exercises/java/' },
                 { text: 'Print', link: '/exercises/java/print' },
               ]
             },

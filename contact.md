@@ -40,33 +40,33 @@ search: false
   };
 </script>
 <div>
-  <section className="contact">
+  <section class="contact">
     <form @submit.prevent="onSubmit">
-      <div className="input-box">
+      <div class="input-box">
         <label>Name</label>
         <input
           type="text"
-          className="field"
+          class="field"
           placeholder="Enter your name"
           name="name"
           required
         />
       </div>
-      <div className="input-box">
+      <div class="input-box">
         <label>Email</label>
         <input
           type="text"
-          className="field"
+          class="field"
           placeholder="Enter your email"
           name="email"
           required
         />
       </div>
-      <div className="input-box">
+      <div class="input-box">
         <label>Message</label>
         <textarea
           type="text"
-          className="field message"
+          class="field message"
           placeholder="Enter your message"
           name="message"
           required
