@@ -114,31 +114,31 @@ const contentwriters = [
 </div>
 
 <style scoped>
-  .teamHeading {
-    padding: 20px;
-    text-align: center;
-  }
+.teamHeading {
+  padding: 20px;
+  text-align: center;
+}
 
-  .gitcontri {
-    text-align: center;
-  }
+.gitcontri {
+  text-align: center;
+}
 
-  ul a {
-    color: inherit;
-    text-decoration: none;
-  }
+ul a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  ul a:hover {
-    color: green;
-  }
+ul a:hover {
+  color: green;
+}
 
-  .dark ul a:hover {
-    color: lightgreen;
-  }
+.dark ul a:hover {
+  color: lightgreen;
+}
 
-  .index-content {
-    text-align: center;
-    font: inherit;
-    font-size: 18px;
-  }
+.index-content {
+  text-align: center;
+  font: inherit;
+  font-size: 18px;
+}
 </style>
