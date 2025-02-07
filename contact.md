@@ -5,7 +5,6 @@ search: false
 ---
 # Contact
 <script setup>
-  import Swal from 'sweetalert2'
   const onSubmit = async (event) => {
     event.preventDefault();
 
@@ -23,19 +22,11 @@ search: false
     if (data.success) {
       event.target.reset();
 
-      Swal.fire({
-        title: "Thank you!",
-        text: "Your message has been sent.",
-        icon: "success"
-      });
+      alert("Success! Your message has been sent.");
     } else {
       console.log("Error", data);
 
-      Swal.fire({
-        title: "Error!",
-        text: "Something went wrong. If this issue persists, email us at seattlecomputingresourcing@gmail.com",
-        icon: "error"
-      });
+      alert("Something went wrong. If this issue persists, email us at seattlecomputingresourcing@gmail.com");
     }
   };
 </script>
