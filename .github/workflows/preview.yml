@@ -11,6 +11,7 @@ permissions:
   contents: write
   pull-requests: write
   checks: write
+  pages: write
 jobs:
   deploy-preview:
     runs-on: ubuntu-latest
@@ -20,7 +21,7 @@ jobs:
         if: github.event.action != 'closed'
       - uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: build
+          source-dir: .
           preview-branch: main
           umbrella-dir: docs/pr-preview
           pages-base-path: docs
