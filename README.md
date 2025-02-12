@@ -2,6 +2,8 @@
 
 Organization based in Seattle, Washington providing resources for C++, Python, and Java. Contests are also hosted every once in a while.
 
+You can find our website [here](https://learningseattlecr.vercel.app)
+
 Want to contribute to our project? Read the contribution guide below!
 ## Contribution Guide
 You must have [Node.js](https://nodejs.org/en/download/) installed to follow this guide.
