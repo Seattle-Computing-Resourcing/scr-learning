@@ -98,6 +98,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'OOP', link: '/learning/cpp/oop' },
+                { text: 'Methods', link: '/learning/cpp/methods' },
               ]
             },
             {
@@ -114,6 +115,14 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Loops', link: '/learning/cpp/loops' },
+              ]
+            },
+            {
+              text: 'Searching',
+              collapsed: false,
+              items: [
+                { text: 'Searching', link: '/learning/cpp/searching' },
+                { text: 'Two Pointers', link: '/learning/cpp/twopointers' },
               ]
             },
             {
