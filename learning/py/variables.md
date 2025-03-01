@@ -36,11 +36,11 @@ Each variable has a specific type of data- they can be numbers of several types,
 
 In programming, "Integer" means the same thing as in math- a number with no decimal part. They can be positive or negative.
 
-Some examples of integers are 1, 5, and -7; however, 0.5 is NOT an integer.
+Some examples of integers are $1$, $5$, and $-7$; however, $0.5$ is NOT an integer.
 
 In python, integers have no minimum or maximum value and are instead limited only by the memory alloted to python.
 
-Here is an example of making a variable called a that holds the value 4.
+Here is an example of making a variable called a that holds the value $4$.
 
 ``` py
 a = 4
@@ -50,9 +50,9 @@ a = 4
 
 "Floats" are basically umbers with a decimal point.
 
-Some examples are 0.7, 4, and -1.333333.
+Some examples are $0.7$, $4$, and $-1.333333$.
 
-Here is an example of creating a variable *b* with the value -7.6.
+Here is an example of creating a variable `b` with the value $-7.6$.
 
 ``` py
 b = -7.6
@@ -62,13 +62,13 @@ b = -7.6
 
 Floats have a limited precision but it is so large it does not usually matter. Just be wary that it's a possibility!
 
-Another error to be wary of is that adding two floatss can be slightly off. Try to type 
+Another error to be wary of is that adding two floats can be slightly off. Try to type 
 
 ``` py
 print(0.1 + 0.2)
 ```
 
-in your file, then run it. This should output the sum of 0.1 and 0.2, but instead is slightly off!
+in your file, then run it. This should output the sum of $0.1$ and $0.2$, but instead is slightly off!
 
 This error usually only matters when you're checking equality. Go to the lesson about if statements to learn more.
 
@@ -116,10 +116,11 @@ myString = ""
 
 #### Escape Characters
 
-Strings can also have escape characters. These allow you to include things you usually wouldn't be able to in your String. They usually take the form of a backslash ( \\ ) followed by another character. For example, type:
+Strings can also have escape characters. These allow you to include things you usually wouldn't be able to in your String. They usually take the form of a backslash ( `\` ) followed by another character. For example, type:
 
 ``` py
 text = "Line 1 \n Line 2"
+print(text)
 ```
 
 This outputs:
@@ -129,9 +130,9 @@ Line 1
 Line 2
 ```
 
-because \\n is a newline character, which creates a new line!
+because `\n` is a newline character, which creates a new line!
 
-You can also use \\t for a tab, \\' and \\" for a single and double quote respectively, and \\\\ for a backslash (which would usually create an unwanted escape character.)
+You can also use `\t` for a tab, `\'` and `\"` for a single and double quote respectively, and `\\` for a backslash (which would usually create an unwanted escape character.)
 
 ## How to Convert
 
@@ -155,15 +156,15 @@ Converting a String to an int is also possible; Python will just use any numbers
 int("12")
 ```
 
-is the *integer* 12! However, 
+is the *integer* $12$! However, 
 
 ``` py
 int("a12")
 ```
 
-will throw an error as "a12" is not a number.
+will throw an error as `a12` is not a number.
 
-Booleans can also be converted to ints; True becomes 1, False becomes 0.
+Booleans can also be converted to ints; `True` becomes $1$, `False` becomes $0$.
 
 ### Converting to Floats
 
@@ -173,11 +174,11 @@ Convert to floats using:
 float()
 ```
 
-An integer such as 4 will become 4.0.
+An integer such as $4$ will become $4.0$.
 
-A Boolean will become 0.0 or 1.0 if it is False or True respectively.
+A Boolean will become $0.0$ or $1.0$ if it is False or True respectively.
 
-A String such as "12.5" will become 12.5.
+A String such as `12.5` will become $12.5$.
 
 ### Converting to Booleans
 
@@ -187,7 +188,7 @@ Convert to booleans using
 bool()
 ```
 
-Any int or float that isn't equal to 0 will become True; 0 or 0.0 will become False.
+Any int or float that isn't equal to $0$ will become `True`; $0$ or $0.0$ will become False.
 
 Any nonempty String will become True, an empty String will become False.
 
