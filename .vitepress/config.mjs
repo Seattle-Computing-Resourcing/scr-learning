@@ -167,7 +167,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Getting Started', link: '/learning/py/gettingstarted' },
-                { text: 'Primitive Datatypes', link: '/learning/py/primitivedt' },
+                { text: 'Variables', link: '/learning/py/variables' },
                 { text: 'Input and Output', link: '/learning/py/inputoutput' },
                 { text: 'Arithmetic Operators', link: '/learning/py/arithmeticoperators' },
               ]
@@ -327,7 +327,7 @@ export default defineConfig({
     },
   },
   title: "SCR",
-  description: "Resources for learning computer science along with contests.",
+  description: "Resources for learning computer science, along with occasional contests.",
   cleanUrls: true,
   lastUpdated: true,
 })
