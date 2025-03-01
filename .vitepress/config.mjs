@@ -167,7 +167,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Getting Started', link: '/learning/py/gettingstarted' },
-                { text: 'Primitive Datatypes', link: '/learning/py/primitivedt' },
+                { text: 'Variables', link: '/learning/py/variables' },
                 { text: 'Input and Output', link: '/learning/py/inputoutput' },
                 { text: 'Arithmetic Operators', link: '/learning/py/arithmeticoperators' },
               ]
@@ -261,27 +261,10 @@ export default defineConfig({
               text: 'Information', link: '/exercises/',
             },
             {
-              text: 'C++',
+              text: 'Exercises',
               collapsed: false,
               items: [
-                { text: 'C++ Exercises', link: '/exercises/cpp/' },
-                { text: 'Print', link: '/exercises/cpp/print' },
-              ]
-            },
-            {
-              text: 'Python',
-              collapsed: false,
-              items: [
-                { text: 'Python Exercises', link: '/exercises/py/' },
-                { text: 'Print', link: '/exercises/py/print' },
-              ]
-            },
-            {
-              text: 'Java',
-              collapsed: false,
-              items: [
-                { text: 'Java Exercises', link: '/exercises/java/' },
-                { text: 'Print', link: '/exercises/java/print' },
+                { text: 'Print', link: '/exercises/print' },
               ]
             },
           ],
@@ -327,7 +310,7 @@ export default defineConfig({
     },
   },
   title: "SCR",
-  description: "Resources for learning computer science along with contests.",
+  description: "Resources for learning computer science, along with occasional contests.",
   cleanUrls: true,
   lastUpdated: true,
 })

@@ -6,7 +6,7 @@ search: false
 hero:
   name: "Seattle Computing Resourcing"
   text: ""
-  tagline: "yes"
+  tagline: "Resources for learning computer science, along with occasional contests"
   actions:
     - theme: brand
       text: Start Learning
