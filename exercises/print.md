@@ -33,10 +33,26 @@ The string is guaranteed to be one line.
 Note that there may be many more solutions.
 
 ::: details Solution
-The solutions basic idea is to declare a String named `s`. Use a scanner to get this String, and then print `s`. The code is shown below.
+The solutions basic idea is to declare a String named `s`. Use get this String through an input, and then print `s`. The code is shown below.
+
+::: code-group
+```cpp
+#include <iostream>
+using namespace std;
+int main () {
+    String s = "";
+    cin >> s;
+    cout << s;
+    return 0;
+}
+```
+
+```py
+print(input())
+```
+
 ```java
 import java.util.Scanner;
-
 public class Main {
     public static void main (String[] args) {
         Scanner scnr = new Scanner(system.in);

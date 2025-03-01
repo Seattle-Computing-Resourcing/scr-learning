@@ -261,27 +261,10 @@ export default defineConfig({
               text: 'Information', link: '/exercises/',
             },
             {
-              text: 'C++',
+              text: 'Exercises',
               collapsed: false,
               items: [
-                { text: 'C++ Exercises', link: '/exercises/cpp/' },
-                { text: 'Print', link: '/exercises/cpp/print' },
-              ]
-            },
-            {
-              text: 'Python',
-              collapsed: false,
-              items: [
-                { text: 'Python Exercises', link: '/exercises/py/' },
-                { text: 'Print', link: '/exercises/py/print' },
-              ]
-            },
-            {
-              text: 'Java',
-              collapsed: false,
-              items: [
-                { text: 'Java Exercises', link: '/exercises/java/' },
-                { text: 'Print', link: '/exercises/java/print' },
+                { text: 'Print', link: '/exercises/print' },
               ]
             },
           ],
