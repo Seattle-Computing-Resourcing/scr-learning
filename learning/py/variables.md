@@ -2,7 +2,7 @@
 
 Variables are one of the most basic things in coding. They allow you to store some information.
 
-## Vocab
+## Defenitions
 
 When we put a value into a variable, we **assign** that value to the variable.
 
@@ -20,13 +20,13 @@ To assign a value to a variable, we type
 a = 
 ```
 
-Then the variable *a* will hold whatever value is placed after the equal sign.
+Then the variable ``a`` will hold whatever value is placed after the equal sign.
 
 ### Accessing
 
 To access a variable, just type its name.
 
-You will see many examples of this in next lessons.
+You will see many examples of this in later lessons.
 
 ## Datatypes
 
@@ -70,17 +70,13 @@ print(0.1 + 0.2)
 
 in your file, then run it. This should output the sum of 0.1 and 0.2, but instead is slightly off!
 
-:::
-
-::: tip
-
 This error usually only matters when you're checking equality. Go to the lesson about if statements to learn more.
 
 :::
 
 ### Booleans
 
-You will learn much more about booleans later, but for now, know that they can be "True" or "False". You can create a variable called *c* that stores "True" like this:
+You will learn much more about booleans later, but for now, know that they can be `True` or `False`. Be careful, `true` and `false` don't work! You can create a variable called `c` that stores `True` like this:
 
 ``` py
 c = True
@@ -167,7 +163,7 @@ int("a12")
 
 will throw an error as "a12" is not a number.
 
-Booleans can also be converted to intss; True becomes 1, False becomes 0.
+Booleans can also be converted to ints; True becomes 1, False becomes 0.
 
 ### Converting to Floats
 
@@ -203,9 +199,9 @@ Convert to a String using
 str()
 ```
 
-Converting a datatype to a string returns... however we would write something!
+Converting a datatype to a string returns however we would write whatever we're converting.
 
-For example, *str(12)* is "12", *str(12.5)* is "12.5", *str(True)* is "True"
+For example, `str(12)` is `12`, `str(12.5)` is `12.5`, `str(True)` is `True`
 
 ## Naming Variables
 
@@ -215,9 +211,7 @@ Variables are case-sensitive, so var and Var are not the same variable and can s
 
 Some words are reserved keywords, which cannot be used as variable names because they are used as code. Some examples are "if" and "True". 
 
-::: details
-
-These words cannot be used as variable names:
+::: details List of Reserved Keywords
 
 False	
 
