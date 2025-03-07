@@ -17,7 +17,7 @@ Open the folder where your repository is and enter the following command to inst
 npm install
 ```
 
-You can test code by running these commands.
+You can test code by running these commands:
 ```
 npm run docs:build
 npm run docs:preview
@@ -25,7 +25,7 @@ npm run docs:preview
 
 A build site will be made at `https://localhost:4173/`, where you can preview your changes.
 
-Alternatively, you can run
+Alternatively, you can run:
 ```
 npm run docs:dev
 ```
