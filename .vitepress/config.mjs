@@ -102,19 +102,20 @@ export default defineConfig({
               ]
             },
             {
+              text: 'Loops',
+              collapsed: false,
+              items: [
+                { text: 'For Loops', link: '/learning/cpp/forloops' },
+                { text: 'While Loops', link: '/learning/cpp/whileloops' },
+              ]
+            },
+            {
               text: 'Arrays, Vectors, and Strings',
               collapsed: false,
               items: [
                 { text: 'Arrays', link: '/learning/cpp/arrays' },
                 { text: 'Vectors', link: '/learning/cpp/vectors' },
                 { text: 'Strings', link: '/learning/cpp/strings' },
-              ]
-            },
-            {
-              text: 'Loops',
-              collapsed: false,
-              items: [
-                { text: 'Loops', link: '/learning/cpp/loops' },
               ]
             },
             {
