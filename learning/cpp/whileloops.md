@@ -1,4 +1,4 @@
-## while Loops
+## While Loops
 While loops will keep looping through a block of code, as long as a condition is met. The skeleton for a while loops is as following:
 ```cpp
 while(condition){
@@ -23,7 +23,7 @@ while(next_permuation(array)){
     //execute code
 }
 ```
-If you want to early exit a for loop or a while loop, there are two main ways to skip parts of the code in the main block. The keyword break creates an early exit and skips the rest of the loop, and the keyword continue skips the rest of the iteration and moves to the next iteration.
+If you want to exit early in a while loop, there are two main ways to skip parts of the code in the main block. The keyword break creates an early exit and skips the rest of the loop, and the keyword continue skips the rest of the iteration and moves to the next iteration.
 ```cpp
 //break
 int i = 0;
@@ -43,16 +43,14 @@ while(i < 10){
     }
     cout << i << endl;
 }
-
-
-// output for break
+```
+The output looks something like this:
+```
 0
 1
 2
 3
 4
-
-// output for continue
 0
 1
 2
