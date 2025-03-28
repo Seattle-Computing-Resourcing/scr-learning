@@ -1,4 +1,6 @@
-A **vector** is similar to an [[Array]] that can change its size. It is also known as a resizable or dynamic array due to its resizable nature.
+# Vector
+
+A **vector** is similar to an [array](https://learningseattlecr.vercel.app/learning/cpp/arrays) that can change its size. It is also known as a resizable or dynamic array due to its resizable nature.
 
 Similar to an array, vectors are zero-indexed, and access to elements is the exact same as array access.
 
