@@ -1,4 +1,7 @@
 # for Loops
+For loops are one of the most important aspects of programming.
+
+## Overview
 The structure for for loops is as following:
 ```cpp
 for(initialization; condition; change){
@@ -78,6 +81,7 @@ Printing `i` and `j` would result in the following:
 2 2
 ```
 
+## Nested Loops
 Nested loops can be useful for traversing 2-d arrays, or matrices. The only thing to keep in mind is that the iterating variable can not be called the same thing throughout the for loops.
 
 The header inside the for loops can also be simplified when traversing arrays in order to directly access the array. Both of the following pieces of code print out the values of the array.
@@ -94,11 +98,12 @@ for(int i : array){
 
 ```
 
+## Changing i
 The increment can also be changed inside of a for loop. This can allow changing the iterator variable my a multiple, or by reverse.
 
 For example:
 
-::: code-grooup
+::: code-group
 
 ```cpp [Reverse]
 for(int i = 10; i > 0; i --){
@@ -119,7 +124,7 @@ for(int i = 10; i > 0; i --){
 1
 ```
 
-``` [Multiple]
+``` cpp [Multiple]
 for(int i = 0; i < 10; i += 2){
     cout << i << endl;
 }
@@ -135,7 +140,7 @@ for(int i = 0; i < 10; i += 2){
 
 :::
 
-## Break
+## Break and Continue
 Both for loops and while loops can be ended early with the break keyword. For example, the following code stops the for loops before it is finished.
 
 ```cpp
