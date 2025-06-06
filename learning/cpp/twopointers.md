@@ -3,13 +3,13 @@
 Two pointers is a method used in competitive coding that enables a quicker version of traversing an array of numbers.
 
 A common questions where two pointers applies is as following:
-In a sorted array of 10 numbers, find any pair that sum up to 10.
+In a sorted array of 10 numbers, find any pair that sums up to 10.
 
-The obvious way to do this problem is to loop through the array twice, and then compare each possible pairing. However, in a worst case scenario, this method will need to run 90 different pairs.
+The obvious way to do this problem is to loop through the array twice, and then compare each possible pairing. However, in a worst case scenario, this method will need to run 90 different pairs, in $\mathcal{O}(N^2)$. Though a $N^2$ solution typically passes the early testcases, it struggles with later test cases when numbers become too big.
 
-To do this problem with two pointers, we establish a right and left pointer, at the first index and final index respectively.
+To do this problem with two pointers, we establish a right and left "pointer." Note that these "pointers" are not actual C++ pointers, but rather numbers that are assigned the value of the first index and final index. 
 
-If the sum of these two numbers are too small, the left pointers moves right by one index. If the sum of these two numbers are too big, then the right pointer moves right by one. In a worst case scenario, this method runs about 30 to 40 pairs before completing.
+If the sum of these two numbers are too small, the left pointers moves right by one index. If the sum of these two numbers are too big, then the right pointer moves right by one. In a worst case scenario, this method runs about 30 to 40 pairs before completing. This method runs in $\mathcal{O}(N)$ time complexity.
 
 Example code:
 
@@ -42,7 +42,7 @@ Find the largest sum possible by a subarray of length 5 in an array of length 15
 
 Like the previous question, in a worst case scenario, a double loop would be feasible but would run 75 times.
 
-The sliding window involves shifting the right and left pointers as described previously, except the starting positions are slightly different. This method can finish the problem in only 15 iterations.
+The sliding window involves shifting the right and left pointers as described previously, except the starting positions are slightly different. This method can finish the problem in only 15 iterations, running in $\mathcal{O}(N)$ time.
 
 ```cpp
 #include <iostream>
@@ -59,9 +59,5 @@ int main(){
         right --;
         
     }
-
-
 }
-
-
 ```
