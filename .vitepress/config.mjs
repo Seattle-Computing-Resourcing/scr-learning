@@ -91,6 +91,7 @@ export default defineConfig({
                 { text: 'Input and Output', link: '/learning/cpp/inputoutput' },
                 { text: 'Arithmetic Operations', link: '/learning/cpp/arithmeticoperations' },
                 { text: 'Conditions', link: '/learning/cpp/conditions' },
+                { text: 'Time Complexity', link: '/learning/cpp/timecomplexity' },
               ]
             },
             {
@@ -162,101 +163,101 @@ export default defineConfig({
               ]
             },
           ],
-          '/learning/py/': [
-            {
-              text: 'Introduction to CS',
-              collapsed: false,
-              items: [
-                { text: 'Getting Started', link: '/learning/py/gettingstarted' },
-                { text: 'Variables', link: '/learning/py/variables' },
-                { text: 'Input and Output', link: '/learning/py/inputoutput' },
-                { text: 'Arithmetic Operators', link: '/learning/py/arithmeticoperators' },
-              ]
-            },
-            {
-              text: 'Conditionals',
-              collapsed: false,
-              items: [
-                { text: 'If Statements', link: '/learning/py/ifstatements' },
-                { text: 'Boolean Operations', link: '/learning/py/booloperations' },
-              ]
-            },
-            {
-              text: 'Loops',
-              collapsed: false,
-              items: [
-                { text: 'Overview', link: '/learning/py/loopsoverview' },
-                { text: 'For Loops', link: '/learning/py/for' },
-                { text: 'While Loops', link: '/learning/py/while' },
-              ]
-            },
-            {
-              text: 'Lists',
-              collapsed: false,
-              items: [
-                { text: 'Overview', link: '/learning/py/listsoverview' },
-                { text: 'Strings', link: '/learning/py/strings' },
-                { text: 'Lists', link: '/learning/py/lists' },
-              ]
-            },
-            {
-              text: 'Object Oriented Programming',
-              collapsed: false,
-              items: [
-                { text: 'Overview', link: '/learning/py/oopoverview' },
-                { text: 'Functions', link: '/learning/py/functions' },
-                { text: 'Recursion', link: '/learning/py/recursion' },
-                { text: 'Classes/Objects/Methods', link: '/learning/py/classobjmethod' },
-                { text: 'Inheritance', link: '/learning/py/inheritance' },
-                { text: 'Encapsulation', link: '/learning/py/polymorphism' },
-              ]
-            },
-            {
-              text: 'Searching',
-              collapsed: false,
-              items: [
-                { text: 'Overview', link: '/learning/py/searchingoverview' },
-                { text: 'Linear', link: '/learning/py/linear' },
-                { text: 'Binary', link: '/learning/py/binary' },
-                { text: 'Two Pointers', link: '/learning/py/twopointers' },
-              ]
-            },
-            {
-              text: 'Sorting',
-              collapsed: false,
-              items: [
-                { text: 'Overview', link: '/learning/py/sortingoverview' },
-                { text: 'Types of Sort', link: '/learning/py/sort' },
-              ]
-            },
-            {
-              text: 'Other Data Structures',
-              collapsed: false,
-              items: [
-                { text: 'Dictionaries', link: '/learning/py/dictionaries' },
-                { text: 'Queues', link: '/learning/py/queue' },
-                { text: 'Stacks', link: '/learning/py/stack' },
-                { text: 'Sets', link: '/learning/py/set' },
-              ]
-            },
-            {
-              text: 'Graphs',
-              collapsed: false,
-              items: [
-                { text: 'Graph Theory', link: '/learning/py/graphtheory' },
-                { text: 'Graph Traversal', link: '/learning/py/graphtraversal' },
-              ]
-            },
-          ],
-          '/learning/java/': [
-            {
-              text: 'Introduction to CS',
-              collapsed: false,
-              items: [
-                { text: 'Getting Started', link: '/learning/java/gettingstarted' },
-              ]
-            },
-          ],
+          // '/learning/py/': [
+          //   {
+          //     text: 'Introduction to CS',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Getting Started', link: '/learning/py/gettingstarted' },
+          //       { text: 'Variables', link: '/learning/py/variables' },
+          //       { text: 'Input and Output', link: '/learning/py/inputoutput' },
+          //       { text: 'Arithmetic Operators', link: '/learning/py/arithmeticoperators' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Conditionals',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'If Statements', link: '/learning/py/ifstatements' },
+          //       { text: 'Boolean Operations', link: '/learning/py/booloperations' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Loops',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Overview', link: '/learning/py/loopsoverview' },
+          //       { text: 'For Loops', link: '/learning/py/for' },
+          //       { text: 'While Loops', link: '/learning/py/while' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Lists',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Overview', link: '/learning/py/listsoverview' },
+          //       { text: 'Strings', link: '/learning/py/strings' },
+          //       { text: 'Lists', link: '/learning/py/lists' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Object Oriented Programming',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Overview', link: '/learning/py/oopoverview' },
+          //       { text: 'Functions', link: '/learning/py/functions' },
+          //       { text: 'Recursion', link: '/learning/py/recursion' },
+          //       { text: 'Classes/Objects/Methods', link: '/learning/py/classobjmethod' },
+          //       { text: 'Inheritance', link: '/learning/py/inheritance' },
+          //       { text: 'Encapsulation', link: '/learning/py/polymorphism' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Searching',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Overview', link: '/learning/py/searchingoverview' },
+          //       { text: 'Linear', link: '/learning/py/linear' },
+          //       { text: 'Binary', link: '/learning/py/binary' },
+          //       { text: 'Two Pointers', link: '/learning/py/twopointers' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Sorting',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Overview', link: '/learning/py/sortingoverview' },
+          //       { text: 'Types of Sort', link: '/learning/py/sort' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Other Data Structures',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Dictionaries', link: '/learning/py/dictionaries' },
+          //       { text: 'Queues', link: '/learning/py/queue' },
+          //       { text: 'Stacks', link: '/learning/py/stack' },
+          //       { text: 'Sets', link: '/learning/py/set' },
+          //     ]
+          //   },
+          //   {
+          //     text: 'Graphs',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Graph Theory', link: '/learning/py/graphtheory' },
+          //       { text: 'Graph Traversal', link: '/learning/py/graphtraversal' },
+          //     ]
+          //   },
+          // ],
+          // '/learning/java/': [
+          //   {
+          //     text: 'Introduction to CS',
+          //     collapsed: false,
+          //     items: [
+          //       { text: 'Getting Started', link: '/learning/java/gettingstarted' },
+          //     ]
+          //   },
+          // ],
           '/exercises/': [
             {
               text: 'Information', link: '/exercises/',
