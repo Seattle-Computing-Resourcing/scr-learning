@@ -59,14 +59,14 @@ export default defineConfig({
                 text: 'C++',
                 link: '/learning/cpp/gettingstarted'
               },
-              {
-                text: 'Python',
-                link: '/learning/py/gettingstarted'
-              },
-              {
-                text: 'Java',
-                link: '/learning/java/gettingstarted'
-              },
+              // {
+              //   text: 'Python',
+              //   link: '/learning/py/gettingstarted'
+              // },
+              // {
+              //   text: 'Java',
+              //   link: '/learning/java/gettingstarted'
+              // },
               {
                 text: 'Exercises',
                 link: '/exercises/'
